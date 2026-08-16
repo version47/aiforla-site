@@ -318,3 +318,7 @@ a.cityrow:hover .cname{color:var(--forest)}
 .citynav{display:flex;flex-wrap:wrap;gap:8px}
 .citynav a{font-size:14px;font-weight:600;border:1px solid var(--line);background:var(--card);padding:8px 14px;border-radius:9px;color:var(--ink)}
 .citynav a:hover{border-color:var(--river);color:var(--river);text-decoration:none}
+
+.card-take{margin-top:16px;border-top:1px solid var(--line-soft);padding-top:14px}
+.card-take ul.tick{margin-top:8px}
+.card-take ul.tick li{color:var(--ink);font-size:14px}
