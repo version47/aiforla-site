@@ -1,0 +1,1130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Research &#183; AI for LA</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.topbar .wrap.sub{height:36px;gap:18px;border-top:1px solid var(--line-soft)}
+.topbar .wrap.sub a{font-family:'JBMono',ui-monospace,monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft)}
+.topbar .wrap.sub a:hover{color:var(--ink);text-decoration:none}
+.controls{top:94px}
+</style>
+<script>try{var t=localStorage.getItem('aiforla-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <span class="brandmark"><a href="index.html">AI <span class="for">for</span> LA</a></span>
+    <nav class="topnav">
+      <a href="index.html">Home</a>
+      <a href="research.html" aria-current="page">Research</a>
+      <a href="index.html#cities">Find your city</a>
+    </nav>
+    <button class="tgl" id="themeBtn" aria-label="Toggle color theme">&#9680; theme</button>
+  </div>
+  <div class="wrap sub">
+    <a href="#summary">Takeaways</a>
+    <a href="#directory">The 19</a>
+    <a href="#themes">Lenses</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="kicker">Examples from the field, gathered for the Louisiana AI community</div>
+    <h1>The research behind <span class="accentword">our model</span></h1>
+    <p class="sub">We scanned 60 owner-facing AI initiatives across the U.S. and went deep on 19. These aren't competitors, they're examples: how others teach, gather, and fund themselves, and what their numbers say.</p>
+    <div class="metaline">
+      <span>SCOPE&nbsp; <b>Non-technical, owner-facing</b></span>
+      <span>FOCUS&nbsp; <b>Curriculum &amp; how they teach</b></span>
+      <span>METHOD&nbsp; <b>60 scanned &#183; 19 deep profiles</b></span>
+      <span>DATE&nbsp; <b>Aug 2026</b></span>
+    </div>
+    <div class="statrow">
+      <div class="stat"><div class="n">60</div><div class="l">Initiatives scanned</div></div>
+      <div class="stat"><div class="n">19</div><div class="l">Profiled in depth</div></div>
+      <div class="stat"><div class="n">13<small>/19</small></div><div class="l">Offer a free on-ramp</div></div>
+      <div class="stat"><div class="n">7<small>/19</small></div><div class="l">Run as cohorts</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="band alt" id="summary">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">The short version</div>
+      <h2>Five takeaways</h2>
+      <p class="lede">What the data across all 19 profiles keeps saying.</p>
+    </div>
+    <div class="tklist">
+      <div class="tk"><div class="tk-n">01</div><div class="tk-body"><h3>Working curricula are organized by business function, not AI concept</h3><p>The strongest programs teach marketing, customer service, operations, and finance with AI inside each, not "Intro to AI." Small Business B(AI)sics, Bronx's five buckets, America's SBDC AI-U, and Florida SBDC all use this spine. Owners buy outcomes for jobs they recognize.</p></div></div>
+      <div class="tk"><div class="tk-n">02</div><div class="tk-body"><h3>The programs that change businesses end every session with a working tool</h3><p>Brazoria's rule is "Ship every Saturday": every session ends with an automation running in the owner's real business, on their own data. Florida SBDC runs on "build, test, apply in your own operations." Lecture-and-framework formats send owners home with a mental model and homework.</p></div></div>
+      <div class="tk"><div class="tk-n">03</div><div class="tk-body"><h3>The best on-ramps name the owner's situation, not the technology</h3><p>FLAIA's event is called "AI for Confused Business Owners." Brazoria promises "if you can use Gmail, you have everything you need on Day 1." Bronx spends week one defusing "AI is coming for my job." All three treat fear-reduction as pedagogy, not marketing.</p></div></div>
+      <div class="tk"><div class="tk-n">04</div><div class="tk-body"><h3>Events-only groups without a progression stall small</h3><p>FLAIA draws 1 to 3 people per event with ~81 members. Applied AI Tampa held one event and sits at 28 members. The durable programs run a ladder: a low-friction social entry, a short finishable cohort, then a contributor tier like the SBDC's student-staffed AI Clinics.</p></div></div>
+      <div class="tk"><div class="tk-n">05</div><div class="tk-body"><h3>Reach rides on many partners; fragility rides on one</h3><p>Nearly every high-reach program is funded by a single corporate grant, mostly Google.org, and every solo-organizer group in the data stalled. The durable structures, America's SBDC network and Southern Georgia Black Chambers, sit on multiple funders and multiple institutional partners.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="directory">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">The research</div>
+      <h2>The nineteen, up close</h2>
+      <p class="lede">Every initiative that survived the screen: owner-facing, non-technical, teaching real AI adoption. Filter, sort, and open any card for the full profile.</p>
+    </div>
+    <div class="controls">
+      <input type="search" id="q" placeholder="Search name or region&#8230;" aria-label="Search">
+      <select id="fCat" aria-label="Filter by category"><option value="">All categories</option><option value="chamber">Chamber / Econ-dev</option><option value="forprofit">For-profit / Cohort</option><option value="community">Grassroots / Meetup</option><option value="nonprofit">Nonprofit / Assoc.</option><option value="sbdc">SBDC / University</option></select>
+      <select id="fFmt" aria-label="Filter by format"><option value="">Any format</option><option value="cohort">Cohort</option><option value="hybrid">Hybrid</option><option value="selfserve">Self-serve</option><option value="events">Events-only</option></select>
+      <select id="fPrice" aria-label="Filter by price"><option value="">Free &amp; paid</option><option value="free">Free</option><option value="paid">Paid</option></select>
+      <div class="viewtoggle"><button id="vCards" class="on">cards</button><button id="vTable">table</button></div>
+      <span class="count" id="count"></span>
+    </div>
+
+    <div class="cards" id="cards">
+      
+    <details class="card" id="p-bronx-chamber-of-commerce-foundation-ai-advantage-program"
+        data-cat="chamber" data-fmt="cohort" data-price="free" data-status="active"
+        data-name="bronx chamber of commerce foundation &#183; ai advantage program" data-region="bronx, new york city, new york">
+      <summary>
+        <div class="card-head">
+          <div class="card-title">
+            <h3>Bronx Chamber of Commerce Foundation &#183; AI Advantage Program</h3>
+            <div class="card-meta">Bronx, New York City, New York <a class="ext" href="https://business.bronxchamber.org/news/details/bronx-chamber-of-commerce-foundation-launches-ai-advantage-program" target="_blank" rel="noopener">visit&#8599;</a></div>
+          </div>
+          <div class="chips"><span class="chip cat">Chamber / Econ-dev</span><span class="chip">Cohort</span><span class="chip price free">Free</span><span class="chip status active">Active</span></div>
+        </div>
+        <p class="card-mission">Free four-week Chamber cohort teaching Bronx microbusiness owners to implement AI in their own operations, paired with $350,000 in direct grants to graduates.</p>
+        <span class="expand">Full profile <span class="chev">&#9662;</span></span>
+      </summary>
+      <div class="card-body">
+        <div class="pillar pillar-curric">
+        <h4><span class="pil-tag">Curriculum</span> How they teach owners</h4>
+        <div class="lvl1"><span class="lvl1-l">What Level&nbsp;1 looks like</span><p>Entry assumes zero technical background: onboarding, then weekly sessions applying everyday AI tools to tasks owners already do, like email, social content, and customer communication.</p></div>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Structure</span><span class="fld-v">Four-week cohort: onboarding, four weekly sessions, in-person graduation. Three sequential cohorts so far. Curriculum organized around five business functions.</span></div><div class="fld"><span class="fld-l">Delivery</span><span class="fld-v">In-person</span></div><div class="fld"><span class="fld-l">Hands-on vs lecture</span><span class="fld-v">Participants tested tools, built solutions, and applied them directly to their businesses during the program.</span></div><div class="fld"><span class="fld-l">Price</span><span class="fld-v">$0; underwritten by Google.org</span></div></div>
+        <div class="subfld"><span class="subfld-l">Example topics</span><ul class="tags"><li>Marketing and marketing automation</li><li>Content creation</li><li>Customer engagement</li><li>Workflow automation</li><li>Data-informed decisions</li></ul></div>
+        <div class="subfld"><span class="subfld-l">Teaching methods</span><ul class="tick"><li>Instructors are Bronx founders and operators, not academics</li><li>Week one names and defuses 'AI is coming for my job'</li><li>Capital paired with training: $350K in grants to graduates</li></ul></div>
+        </div>
+        <div class="pillar">
+        <h4>Events &amp; community</h4>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Cadence</span><span class="fld-v">Weekly over four weeks; cohorts run back to back</span></div><div class="fld"><span class="fld-l">Format</span><span class="fld-v">Cohort sessions plus a capstone in-person graduation</span></div><div class="fld"><span class="fld-l">Size</span><span class="fld-v">~23 businesses in cohort one; 70 across three cohorts</span></div><div class="fld"><span class="fld-l">Community size</span><span class="fld-v">70 trained from 200+ applicants; the first cohort alone drew 120+ applications</span></div></div>
+        <div class="note"><span class="subfld-l">Progression</span><p>Applicant, selected cohort member, four weeks of training, graduation, then grant eligibility.</p></div>
+        <div class="note"><span class="subfld-l">How they grow</span><p>Chamber membership and community trust; oversubscribed applications; alumni surface as public success stories.</p></div>
+        </div>
+        <div class="pillar">
+        <h4>Model, brand &amp; funding</h4>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Entity</span><span class="fld-v">Chamber of commerce foundation (nonprofit arm)</span></div><div class="fld"><span class="fld-l">Funding</span><span class="fld-v">Google.org-backed, free to participants, plus $350K in direct grants</span></div><div class="fld"><span class="fld-l">Launched</span><span class="fld-v">2026</span></div><div class="fld"><span class="fld-l">Audience</span><span class="fld-v">Bronx microbusinesses: ~95% have five or fewer employees, 94% minority-owned, about half women-owned</span></div></div>
+        <div class="note"><span class="subfld-l">Positioning &amp; name</span><p>'AI Advantage' frames AI as an edge for the little guy, not a threat. Chamber branding signals a trusted local institution, not a vendor.</p></div>
+        </div>
+        <div class="pillar pillar-take">
+        <h4>Top 3 moves to borrow</h4>
+        <ul class="tick"><li>Five business-function buckets instead of AI concepts</li><li>Fear-reduction built into week one as pedagogy</li><li>Money tied to completion, with tracked outcomes: 5-10 hrs/week saved, ~$500/week in savings</li></ul>
+        </div>
+        <div class="sources"><span class="subfld-l">Sources &middot; confidence: medium</span><div class="srcwrap"><a href="https://business.bronxchamber.org/news/details/bronx-chamber-of-commerce-foundation-launches-ai-advantage-program" target="_blank" rel="noopener">business.bronxchamber.org</a><a href="https://secure.acce.org/articles/programs-and-events/turning-ai-access-into-small-business-advantage/" target="_blank" rel="noopener">secure.acce.org</a><a href="https://bronx.news12.com/2026/02/17/free-program-teaches-small-business-owners-how-to-use-ai/wYUuzvvuiUMLOJcfFzr2i" target="_blank" rel="noopener">bronx.news12.com</a><a href="https://bronx.news12.com/free-program-teaches-small-business-owners-how-to-use-ai" target="_blank" rel="noopener">bronx.news12.com</a><a href="https://irp.cdn-website.com/d10ad5d2/files/uploaded/2025-01-12+Release_+AI+Advantage+Training+-+First+Cohort+Announced.pdf" target="_blank" rel="noopener">irp.cdn-website.com</a><a href="https://www.bronxchamber.org/" target="_blank" rel="noopener">www.bronxchamber.org</a></div></div>
+        </div>
+    </details>
+
+    <details class="card" id="p-manhattan-chamber-of-commerce-tech-to-table"
+        data-cat="chamber" data-fmt="cohort" data-price="free" data-status="active"
+        data-name="manhattan chamber of commerce &#183; tech to table" data-region="new york city (manhattan), new york">
+      <summary>
+        <div class="card-head">
+          <div class="card-title">
+            <h3>Manhattan Chamber of Commerce &#183; Tech to Table</h3>
+            <div class="card-meta">New York City <a class="ext" href="https://www.manhattancc.org/ai-digital-empowerment/" target="_blank" rel="noopener">visit&#8599;</a></div>
+          </div>
+          <div class="chips"><span class="chip cat">Chamber / Econ-dev</span><span class="chip">Cohort</span><span class="chip price free">Free</span><span class="chip status active">Active</span></div>
+        </div>
+        <p class="card-mission">Six-week Chamber accelerator teaching Manhattan restaurant owners to fold AI into daily operations. Free, and completers who implement receive a $5,000 grant.</p>
+        <span class="expand">Full profile <span class="chev">&#9662;</span></span>
+      </summary>
+      <div class="card-body">
+        <div class="pillar pillar-curric">
+        <h4><span class="pil-tag">Curriculum</span> How they teach owners</h4>
+        <div class="lvl1"><span class="lvl1-l">What Level&nbsp;1 looks like</span><p>A restaurant owner joins a 40-person cohort and attends one roughly one-hour session a week, walked step by step through applying AI to a concrete pain point like inventory or a marketing post.</p></div>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Structure</span><span class="fld-v">Six-week accelerator, one ~1-hour session per week; two identical cohorts of 40.</span></div><div class="fld"><span class="fld-l">Delivery</span><span class="fld-v">Weekly sessions; modality not published</span></div><div class="fld"><span class="fld-l">Hands-on vs lecture</span><span class="fld-v">Step-by-step guided implementation with individualized support. One graduate built tools to proofread menus, answer inquiries, and streamline hiring around a language barrier.</span></div><div class="fld"><span class="fld-l">Price</span><span class="fld-v">Free; $5,000 grant on completion and implementation</span></div></div>
+        <div class="subfld"><span class="subfld-l">Example topics</span><ul class="tags"><li>Inventory management</li><li>Sales and cost tracking</li><li>Staffing and scheduling</li><li>AI-assisted marketing and social media</li><li>Day-to-day restaurant operations</li></ul></div>
+        <div class="subfld"><span class="subfld-l">Teaching methods</span><ul class="tick"><li>The whole curriculum maps to one vertical's pain points</li><li>One hour a week, designed around a restaurant schedule</li><li>Google-trained instructors: train-the-trainer with a big partner</li></ul></div>
+        </div>
+        <div class="pillar">
+        <h4>Events &amp; community</h4>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Cadence</span><span class="fld-v">Weekly across six weeks</span></div><div class="fld"><span class="fld-l">Format</span><span class="fld-v">~One-hour session with step-by-step instructor guidance</span></div><div class="fld"><span class="fld-l">Size</span><span class="fld-v">Cohorts of 40; 80 owners in the 2026 run</span></div><div class="fld"><span class="fld-l">Community size</span><span class="fld-v">80 owners across two cohorts, inside the Chamber's membership base</span></div></div>
+        <div class="note"><span class="subfld-l">Progression</span><p>Apply, join a cohort, attend six sessions, implement, receive the grant.</p></div>
+        <div class="note"><span class="subfld-l">How they grow</span><p>Application-based recruitment through Chamber channels; successive cohorts.</p></div>
+        </div>
+        <div class="pillar">
+        <h4>Model, brand &amp; funding</h4>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Entity</span><span class="fld-v">Chamber accelerator program (nonprofit-run)</span></div><div class="fld"><span class="fld-l">Funding</span><span class="fld-v">Google.org-underwritten; free plus completion grants</span></div><div class="fld"><span class="fld-l">Launched</span><span class="fld-v">2026</span></div><div class="fld"><span class="fld-l">Audience</span><span class="fld-v">Non-technical Manhattan restaurant and food-business owners</span></div></div>
+        <div class="note"><span class="subfld-l">Positioning &amp; name</span><p>'Tech to Table' plays on farm-to-table: technology brought into the food business. Framed around reducing burden and cost, not innovation hype.</p></div>
+        </div>
+        <div class="pillar pillar-take">
+        <h4>Top 3 moves to borrow</h4>
+        <ul class="tick"><li>A vertical-specific cohort where every example is the owner's actual pain</li><li>One hour a week: a commitment owners can keep</li><li>The incentive is conditioned on implementing, not attending</li></ul>
+        </div>
+        <div class="sources"><span class="subfld-l">Sources &middot; confidence: medium</span><div class="srcwrap"><a href="https://www.manhattancc.org/2026/01/15/chamber-launches-new-ai-powered-accelerator-program-tech-to-table-with-support-from-google-org/" target="_blank" rel="noopener">www.manhattancc.org</a><a href="https://www.manhattancc.org/ai-digital-empowerment/" target="_blank" rel="noopener">www.manhattancc.org</a><a href="https://www.thecityreporter.nyc/2026/03/04/artificial-intelligence-ai-small-business-nonprofits/" target="_blank" rel="noopener">www.thecityreporter.nyc</a><a href="https://businessdailynetwork.com/stories/678805836-manhattan-chamber-launches-ai-accelerator-for-food-businesses-with-support-from-google-org" target="_blank" rel="noopener">businessdailynetwork.com</a></div></div>
+        </div>
+    </details>
+
+    <details class="card" id="p-southern-georgia-black-chambers-small-business-academy-ai-integration-track"
+        data-cat="chamber" data-fmt="cohort" data-price="free" data-status="active"
+        data-name="southern georgia black chambers &#183; small business academy (ai integration track)" data-region="valdosta, georgia &#183; serving a 19-county southern georgia region">
+      <summary>
+        <div class="card-head">
+          <div class="card-title">
+            <h3>Southern Georgia Black Chambers &#183; Small Business Academy (AI Integration track)</h3>
+            <div class="card-meta">Valdosta, Georgia <a class="ext" href="https://www.sgablackchambers.org" target="_blank" rel="noopener">visit&#8599;</a></div>
+          </div>
+          <div class="chips"><span class="chip cat">Chamber / Econ-dev</span><span class="chip">Cohort</span><span class="chip price free">Free</span><span class="chip status active">Active</span></div>
+        </div>
+        <p class="card-mission">A Black chamber's 11-session Execution Labs residency moving owners from survival mode to scale mode. The AI track trains owners to run private AI systems on their own business documents.</p>
+        <span class="expand">Full profile <span class="chev">&#9662;</span></span>
+      </summary>
+      <div class="card-body">
+        <div class="pillar pillar-curric">
+        <h4><span class="pil-tag">Curriculum</span> How they teach owners</h4>
+        <div class="lvl1"><span class="lvl1-l">What Level&nbsp;1 looks like</span><p>A hands-on, plain-language intro to Gemini applied to tasks owners already do: social posts, transcribing meetings, analyzing documents. Mantra: you're the professional, AI is the assistant.</p></div>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Structure</span><span class="fld-v">11-session residency at VSU's business-school labs; each lab produces a tangible asset. AI Integration is session five. Registration requires a Business Health Assessment.</span></div><div class="fld"><span class="fld-l">Delivery</span><span class="fld-v">In-person</span></div><div class="fld"><span class="fld-l">Hands-on vs lecture</span><span class="fld-v">'Fingertips-to-keyboard': every participant works live at a keyboard. The AI session is a 3-hour lab run as a three-act cycle.</span></div><div class="fld"><span class="fld-l">Price</span><span class="fld-v">Free (grant and sponsor funded); completion unlocks eligibility for a $2,500 Georgia Power Master Grant</span></div></div>
+        <div class="subfld"><span class="subfld-l">Example topics</span><ul class="tags"><li>AI integration and workflow automation</li><li>Gemini for social content, transcription, document analysis</li><li>SOUTH Method prompting</li><li>Private AI Business Hubs in NotebookLM built on the owner's own contracts, SOPs, and proposals</li></ul></div>
+        <div class="subfld"><span class="subfld-l">Teaching methods</span><ul class="tick"><li>A named five-step prompting framework: the SOUTH Method (Share, Outline, Upgrade, Test, Hit Execute)</li><li>Capstone: a private AI hub in NotebookLM grounded in the owner's own documents</li><li>Live Spanish translation ('Project Puente') and translated materials</li></ul></div>
+        </div>
+        <div class="pillar">
+        <h4>Events &amp; community</h4>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Cadence</span><span class="fld-v">Sequenced 11-session residency; 2026 kickoff Feb 24, AI session ~April 7</span></div><div class="fld"><span class="fld-l">Format</span><span class="fld-v">3-hour hands-on lab in a university computer lab; public workshops in libraries</span></div><div class="fld"><span class="fld-l">Size</span><span class="fld-v">Not disclosed</span></div><div class="fld"><span class="fld-l">Community size</span><span class="fld-v">Membership chamber serving a 19-county region; cohort sizes not published</span></div></div>
+        <div class="note"><span class="subfld-l">Progression</span><p>Free public workshop, waitlist and intake assessment, the residency with 1:1 student mentors, then grant eligibility and the chamber network.</p></div>
+        <div class="note"><span class="subfld-l">How they grow</span><p>Free library workshops funnel owners into the sponsor-funded Academy; galas, parades, and contract-readiness grants keep the network warm.</p></div>
+        </div>
+        <div class="pillar">
+        <h4>Model, brand &amp; funding</h4>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Entity</span><span class="fld-v">Nonprofit Black chamber of commerce</span></div><div class="fld"><span class="fld-l">Funding</span><span class="fld-v">HUD CDBG dollars via the City of Valdosta, Georgia Power title sponsorship, plus VSU, UGA SBDC, and others</span></div><div class="fld"><span class="fld-l">Launched</span><span class="fld-v">AI programming Sept 2025; the 2026 Academy is branded 'The Year of Execution'</span></div><div class="fld"><span class="fld-l">Audience</span><span class="fld-v">Minority and small-business owners across 19 Southern Georgia counties; Spanish-speaking owners explicitly supported</span></div></div>
+        <div class="note"><span class="subfld-l">Positioning &amp; name</span><p>Execution-first and equity-driven: AI framed as leveling the playing field, not elite tech. Brand hooks are the SOUTH Method and turning owners into 'AI Architects.'</p></div>
+        </div>
+        <div class="pillar pillar-take">
+        <h4>Top 3 moves to borrow</h4>
+        <ul class="tick"><li>A named, ownable prompting method that doubles as a brand asset</li><li>A coding-free capstone: an AI hub built on the owner's own documents</li><li>AI embedded inside a broader owner academy (compliance, capital, procurement), not standing alone</li></ul>
+        </div>
+        <div class="sources"><span class="subfld-l">Sources &middot; confidence: medium</span><div class="srcwrap"><a href="https://valdostatoday.com/news-2/local/2026/04/sgbc-small-business-academy-focuses-on-ai-integration/" target="_blank" rel="noopener">valdostatoday.com</a><a href="https://valdostadailytimes.com/2026/04/15/southern-georgia-black-chambers-hosts-ai-residency-at-vsu/" target="_blank" rel="noopener">valdostadailytimes.com</a><a href="https://valdostadailytimes.com/2026/02/06/sgbc-formalizes-partnerships-for-2026-small-business-academy/" target="_blank" rel="noopener">valdostadailytimes.com</a><a href="https://valdostatoday.com/news-2/local/2025/09/sgbc-holds-ai-workshop-for-entrepreneurs/" target="_blank" rel="noopener">valdostatoday.com</a><a href="https://valdostadailytimes.com/2025/09/22/entrepreneurs-praise-sgbcs-practical-ai-workshop/" target="_blank" rel="noopener">valdostadailytimes.com</a><a href="https://www.sgablackchambers.org" target="_blank" rel="noopener">www.sgablackchambers.org</a><a href="https://www.sgablackchambers.org/2026-academy-waitlist" target="_blank" rel="noopener">www.sgablackchambers.org</a></div></div>
+        </div>
+    </details>
+
+    <details class="card" id="p-artificial-intelligence-for-business-group-julia-fu-ai-leadership-frontier-institute"
+        data-cat="forprofit" data-fmt="selfserve" data-price="free" data-status="active"
+        data-name="artificial intelligence for business group (julia fu / ai leadership frontier institute)" data-region="multi-city us meetup network, all events online via zoom. named chapters include austin tx, atlanta ga, new york ny, washington dc, columbus oh, oakland ca, san francisco ca, irvine ca, phoenix az.">
+      <summary>
+        <div class="card-head">
+          <div class="card-title">
+            <h3>Artificial Intelligence for Business Group (Julia Fu / AI Leadership Frontier Institute)</h3>
+            <div class="card-meta">Multi-city US Meetup network, all events o <a class="ext" href="https://www.meetup.com/artificial-intelligence-for-business-group-austin-tx/" target="_blank" rel="noopener">visit&#8599;</a></div>
+          </div>
+          <div class="chips"><span class="chip cat">For-profit / Cohort</span><span class="chip">Self-serve</span><span class="chip price free">Free</span><span class="chip status active">Active</span></div>
+        </div>
+        <p class="card-mission">A multi-city Meetup network of free 60-minute Zoom masterclasses for non-technical leaders, framed as moving from AI overwhelm to AI clarity. Feeds the founder's paid institute.</p>
+        <span class="expand">Full profile <span class="chev">&#9662;</span></span>
+      </summary>
+      <div class="card-body">
+        <div class="pillar pillar-curric">
+        <h4><span class="pil-tag">Curriculum</span> How they teach owners</h4>
+        <div class="lvl1"><span class="lvl1-l">What Level&nbsp;1 looks like</span><p>Register free, bring one real business challenge, and apply the session's frameworks to it live. No prep, no technical background; sessions are deliberately not recorded.</p></div>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Structure</span><span class="fld-v">Standalone ~60-minute themed masterclasses repeated across city chapters; 50+ delivered to 18,000+ people. No multi-week track.</span></div><div class="fld"><span class="fld-l">Delivery</span><span class="fld-v">Online (Zoom), all chapters</span></div><div class="fld"><span class="fld-l">Hands-on vs lecture</span><span class="fld-v">Interactive but light: examples, frameworks, guided reflection, Q&amp;A. No build-along exercises.</span></div><div class="fld"><span class="fld-l">Price</span><span class="fld-v">Free</span></div></div>
+        <div class="subfld"><span class="subfld-l">Example topics</span><ul class="tags"><li>Spotting high-value AI use cases and ignoring the rest</li><li>From one-off prompts to repeatable workflows</li><li>Where tools add value vs where human judgment is essential</li><li>Guardrails for quality and privacy</li></ul></div>
+        <div class="subfld"><span class="subfld-l">Teaching methods</span><ul class="tick"><li>Every attendee brings one real business challenge to work on</li><li>Live-only and not recorded, to force participation and keep it personal</li><li>The same masterclass replicated across city-named Meetup groups for search reach</li></ul></div>
+        </div>
+        <div class="pillar">
+        <h4>Events &amp; community</h4>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Cadence</span><span class="fld-v">Roughly monthly per chapter; Austin has run ~63 events</span></div><div class="fld"><span class="fld-l">Format</span><span class="fld-v">60-minute live Zoom masterclass: examples, frameworks, Q&amp;A</span></div><div class="fld"><span class="fld-l">Size</span><span class="fld-v">Small and interactive; live attendance is a subset of membership</span></div><div class="fld"><span class="fld-l">Community size</span><span class="fld-v">Austin ~222 and Atlanta ~244 members plus 8+ other chapters; the founder claims ~5,000 across the network</span></div></div>
+        <div class="note"><span class="subfld-l">Progression</span><p>Free masterclass, newsletter, repeat attendance, then the founder's paid institute. The contributor tier is thin: one founder plus assistants.</p></div>
+        <div class="note"><span class="subfld-l">How they grow</span><p>Replicate one free masterclass across many city Meetup groups, then funnel attendees to the newsletter and paid practice.</p></div>
+        </div>
+        <div class="pillar">
+        <h4>Model, brand &amp; funding</h4>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Entity</span><span class="fld-v">For-profit-linked community network: free events feeding an advisory practice</span></div><div class="fld"><span class="fld-l">Funding</span><span class="fld-v">Free events; monetization through the founder's paid advisory and education work</span></div><div class="fld"><span class="fld-l">Launched</span><span class="fld-v">Not published</span></div><div class="fld"><span class="fld-l">Audience</span><span class="fld-v">Executives, founders, owners, consultants, managers; explicitly no technical background needed</span></div></div>
+        <div class="note"><span class="subfld-l">Positioning &amp; name</span><p>Literal, SEO-plain naming ('Artificial Intelligence for Business Group - Austin, TX') for Meetup discoverability. Calm and anti-hype: not a coding class, not a tour of 50 tools.</p></div>
+        </div>
+        <div class="pillar pillar-take">
+        <h4>Top 3 moves to borrow</h4>
+        <ul class="tick"><li>'Bring one real business challenge' makes a lecture feel hands-on for free</li><li>A tight 60-minute masterclass template a second organizer could run</li><li>Plain, literal naming that meets searchers where they are</li></ul>
+        </div>
+        <div class="sources"><span class="subfld-l">Sources &middot; confidence: medium</span><div class="srcwrap"><a href="https://www.meetup.com/artificial-intelligence-for-business-group-austin-tx/" target="_blank" rel="noopener">www.meetup.com</a><a href="https://www.meetup.com/artificial-intelligence-for-business-group-atlanta-ga/" target="_blank" rel="noopener">www.meetup.com</a><a href="https://www.meetup.com/artificial-intelligence-for-business-group-new-york-ny/events/315265754/" target="_blank" rel="noopener">www.meetup.com</a><a href="https://www.meetup.com/artificial-intelligence-for-business-group-washington-dc/" target="_blank" rel="noopener">www.meetup.com</a><a href="https://www.meetup.com/artificial-intelligence-for-business-group-columbus-oh/" target="_blank" rel="noopener">www.meetup.com</a><a href="https://www.meetup.com/artificial-intelligence-san-francisco-ca/" target="_blank" rel="noopener">www.meetup.com</a></div></div>
+        </div>
+    </details>
+
+    <details class="card" id="p-brazoria-tech-lab-ai-prep-initiative"
+        data-cat="forprofit" data-fmt="cohort" data-price="paid" data-status="active"
+        data-name="brazoria tech lab (ai prep initiative)" data-region="brazoria county, gulf coast texas (angleton / lake jackson area)">
+      <summary>
+        <div class="card-head">
+          <div class="card-title">
+            <h3>Brazoria Tech Lab (AI Prep Initiative)</h3>
+            <div class="card-meta">Brazoria County, Gulf Coast Texas <a class="ext" href="https://brazoriatechlab.com/" target="_blank" rel="noopener">visit&#8599;</a></div>
+          </div>
+          <div class="chips"><span class="chip cat">For-profit / Cohort</span><span class="chip">Cohort</span><span class="chip price paid">Paid</span><span class="chip status active">Active</span></div>
+        </div>
+        <p class="card-mission">A paid four-weekend academy for Gulf Coast Texas operators: 'In four weekends, we'll automate it WITH you, not FOR you.' Targets the ~12 hours a week owners lose to email, quoting, scheduling, and follow-up.</p>
+        <span class="expand">Full profile <span class="chev">&#9662;</span></span>
+      </summary>
+      <div class="card-body">
+        <div class="pillar pillar-curric">
+        <h4><span class="pil-tag">Curriculum</span> How they teach owners</h4>
+        <div class="lvl1"><span class="lvl1-l">What Level&nbsp;1 looks like</span><p>Weekend one is triage, not building: identify which AI tools matter for your business and cut subscription waste. The promise up front: 'If you can use Gmail, you can use everything we teach.'</p></div>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Structure</span><span class="fld-v">Four consecutive Saturdays, four sequential modules, each ending with something shipped. 2-3 hours in session plus 2-4 hours of deployment during the week.</span></div><div class="fld"><span class="fld-l">Delivery</span><span class="fld-v">In-person; Zoom only for makeups</span></div><div class="fld"><span class="fld-l">Hands-on vs lecture</span><span class="fld-v">'Ship every Saturday': the work happens in the room, on your laptop, with your data. Instructors pace the room to the slowest builder.</span></div><div class="fld"><span class="fld-l">Price</span><span class="fld-v">$599-$750 one time; $0 need-based scholarships; team and community sponsor bundles</span></div></div>
+        <div class="subfld"><span class="subfld-l">Example topics</span><ul class="tags"><li>Weekend 1: triage tools, cut subscription waste</li><li>Weekend 2: document an automation plan for your top 3 workflows</li><li>Weekend 3: deploy your first AI assistant</li><li>Weekend 4: lead-gen agents live, team trained</li></ul></div>
+        <div class="subfld"><span class="subfld-l">Teaching methods</span><ul class="tick"><li>Every session ends with a working automation in the owner's real business; no deferred homework</li><li>Pace to the slowest builder so nobody falls behind</li><li>Tool-agnostic no-code stack: ChatGPT, Claude, Notion, Airtable, and others</li></ul></div>
+        </div>
+        <div class="pillar">
+        <h4>Events &amp; community</h4>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Cadence</span><span class="fld-v">Cohort-based; Cohort I ran four consecutive Saturdays from July 10</span></div><div class="fld"><span class="fld-l">Format</span><span class="fld-v">2-3 hour Saturday build sessions</span></div><div class="fld"><span class="fld-l">Size</span><span class="fld-v">~15 participants, capped</span></div><div class="fld"><span class="fld-l">Community size</span><span class="fld-v">Cohort I capped at 15 seats</span></div></div>
+        <div class="note"><span class="subfld-l">Progression</span><p>Triage tools, plan the top three workflows, build a first assistant, deploy lead generation. The owner is operating the tools themselves by Day 29.</p></div>
+        <div class="note"><span class="subfld-l">How they grow</span><p>Cohort enrollment; sponsor tiers let one backer buy multiple seats.</p></div>
+        </div>
+        <div class="pillar">
+        <h4>Model, brand &amp; funding</h4>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Entity</span><span class="fld-v">For-profit AI academy</span></div><div class="fld"><span class="fld-l">Funding</span><span class="fld-v">Tuition-funded with scholarships; sponsor backing from Amplify Louisville and Story Louisville</span></div><div class="fld"><span class="fld-l">Launched</span><span class="fld-v">2025 (inferred)</span></div><div class="fld"><span class="fld-l">Audience</span><span class="fld-v">Owners, contractors, and teams of 1-20; explicitly not Fortune 500 transformation</span></div></div>
+        <div class="note"><span class="subfld-l">Positioning &amp; name</span><p>Blue-collar, anti-theory, anti-consultant. Tagline: 'Stop doing $15/hr work in a $150/hr business.'</p></div>
+        </div>
+        <div class="pillar pillar-take">
+        <h4>Top 3 moves to borrow</h4>
+        <ul class="tick"><li>'Ship every Saturday' as the curriculum spine</li><li>A zero-background promise stated plainly: if you can use Gmail, you're ready</li><li>Sponsor seat bundles that let local backers buy access without owning the program</li></ul>
+        </div>
+        <div class="sources"><span class="subfld-l">Sources &middot; confidence: medium</span><div class="srcwrap"><a href="https://brazoriatechlab.com/" target="_blank" rel="noopener">brazoriatechlab.com</a><a href="https://aiprep.xyz/" target="_blank" rel="noopener">aiprep.xyz</a></div></div>
+        </div>
+    </details>
+
+    <details class="card" id="p-charlotte-ai-artificial-intelligence-learning-circle"
+        data-cat="forprofit" data-fmt="hybrid" data-price="paid" data-status="active"
+        data-name="charlotte ai (artificial intelligence) learning circle" data-region="charlotte, north carolina (metro spans into fort mill, sc)">
+      <summary>
+        <div class="card-head">
+          <div class="card-title">
+            <h3>Charlotte AI (Artificial Intelligence) Learning Circle</h3>
+            <div class="card-meta">Charlotte, North Carolina <a class="ext" href="https://www.meetup.com/charlotte-ai-chatgpt-learning-circle/" target="_blank" rel="noopener">visit&#8599;</a></div>
+          </div>
+          <div class="chips"><span class="chip cat">For-profit / Cohort</span><span class="chip">Hybrid</span><span class="chip price paid">Paid</span><span class="chip status active">Active</span></div>
+        </div>
+        <p class="card-mission">A Charlotte Meetup group teaching beginners to make AI work for daily life, business, and career, through paid small-group ChatGPT classes and free social events.</p>
+        <span class="expand">Full profile <span class="chev">&#9662;</span></span>
+      </summary>
+      <div class="card-body">
+        <div class="pillar pillar-curric">
+        <h4><span class="pil-tag">Curriculum</span> How they teach owners</h4>
+        <div class="lvl1"><span class="lvl1-l">What Level&nbsp;1 looks like</span><p>A beginner with zero AI experience is walked step by step through what ChatGPT is, writing better prompts, everyday uses like writing and email, and a live Q&amp;A. Class capped at 15.</p></div>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Structure</span><span class="fld-v">Two tiers: Beginner Classes now, Advanced ChatGPT-5 Workshops 'available soon.' No multi-week cohort.</span></div><div class="fld"><span class="fld-l">Delivery</span><span class="fld-v">Socials in person; class modality unconfirmed</span></div><div class="fld"><span class="fld-l">Hands-on vs lecture</span><span class="fld-v">Guided and step-by-step, with live Q&amp;A built into every session.</span></div><div class="fld"><span class="fld-l">Price</span><span class="fld-v">$50 per beginner class, paid in advance; socials free or ~$15</span></div></div>
+        <div class="subfld"><span class="subfld-l">Example topics</span><ul class="tags"><li>What ChatGPT is and how it works</li><li>Better prompts for better answers</li><li>Everyday uses: writing, research, email</li><li>Practical tips for work and personal life</li></ul></div>
+        <div class="subfld"><span class="subfld-l">Teaching methods</span><ul class="tick"><li>Class size capped at 15 to stay interactive</li><li>Free social events (brewery, pickleball, TopGolf, watch parties) as the funnel into paid classes</li><li>Named around ChatGPT because that's what non-technical people search</li></ul></div>
+        </div>
+        <div class="pillar">
+        <h4>Events &amp; community</h4>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Cadence</span><span class="fld-v">Irregular; roughly four documented events</span></div><div class="fld"><span class="fld-l">Format</span><span class="fld-v">Paid instructional classes plus free or low-cost socials</span></div><div class="fld"><span class="fld-l">Size</span><span class="fld-v">Classes capped at 15</span></div><div class="fld"><span class="fld-l">Community size</span><span class="fld-v">~229 Meetup members</span></div></div>
+        <div class="note"><span class="subfld-l">Progression</span><p>Free social attendee, paid beginner class, then the advanced workshop.</p></div>
+        <div class="note"><span class="subfld-l">How they grow</span><p>Meetup discovery plus recurring socials that lower the barrier.</p></div>
+        </div>
+        <div class="pillar">
+        <h4>Model, brand &amp; funding</h4>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Entity</span><span class="fld-v">Organizer-run Meetup group with paid classes</span></div><div class="fld"><span class="fld-l">Funding</span><span class="fld-v">Class revenue, ~$50 a person; no sponsor or nonprofit backing found</span></div><div class="fld"><span class="fld-l">Launched</span><span class="fld-v">Likely 2025</span></div><div class="fld"><span class="fld-l">Audience</span><span class="fld-v">Non-technical beginners; general-consumer framing with business as one of three use contexts</span></div></div>
+        <div class="note"><span class="subfld-l">Positioning &amp; name</span><p>'Learning Circle' softens a course into a friendly group. Beginner-first and jargon-light.</p></div>
+        </div>
+        <div class="pillar pillar-take">
+        <h4>Top 3 moves to borrow</h4>
+        <ul class="tick"><li>Name the group around the tool people actually search for</li><li>A social-first funnel: genuinely fun free events before any paid class</li><li>A 15-seat cap that keeps beginner sessions unintimidating</li></ul>
+        </div>
+        <div class="sources"><span class="subfld-l">Sources &middot; confidence: medium &#183; core facts (audience, beginner-first positioning, class topics, social-event mix, ~229 members, organizer &#x27;Richard&#x27;, ~$50 beginner class capped at 15) appeared consistently across the Meetup page and search snapshots, but Meetup&#x27;s dynamic pages returned login shells on some fetches, so class delivery format (online vs in-person), launch date, and event cadence are unconfirmed.</span><div class="srcwrap"><a href="https://www.meetup.com/charlotte-ai-chatgpt-learning-circle/" target="_blank" rel="noopener">www.meetup.com</a><a href="https://www.meetup.com/charlotte-ai-chatgpt-learning-circle/events/" target="_blank" rel="noopener">www.meetup.com</a><a href="https://www.nucamp.co/blog/coding-bootcamp-charlotte-nc-top-10-mustattend-tech-meetups-and-conferences-in-charlotte" target="_blank" rel="noopener">www.nucamp.co</a></div></div>
+        </div>
+    </details>
+
+    <details class="card" id="p-memphis-ai-meetup-weaddbots"
+        data-cat="forprofit" data-fmt="events" data-price="free" data-status="active"
+        data-name="memphis ai meetup (weaddbots)" data-region="memphis metro, tennessee (incl. germantown, collierville, east memphis, midtown, downtown, olive branch ms)">
+      <summary>
+        <div class="card-head">
+          <div class="card-title">
+            <h3>Memphis AI Meetup (WeAddBots)</h3>
+            <div class="card-meta">Memphis metro, Tennessee <a class="ext" href="https://www.weaddbots.com/events/memphis-ai-meetup" target="_blank" rel="noopener">visit&#8599;</a></div>
+          </div>
+          <div class="chips"><span class="chip cat">For-profit / Cohort</span><span class="chip">Events-only</span><span class="chip price free">Free</span><span class="chip status active">Active</span></div>
+        </div>
+        <p class="card-mission">Weekly coffee-chat meetup helping non-technical Memphis owners figure out where AI actually helps their business, with no hype, jargon, or sales pressure.</p>
+        <span class="expand">Full profile <span class="chev">&#9662;</span></span>
+      </summary>
+      <div class="card-body">
+        <div class="pillar pillar-curric">
+        <h4><span class="pil-tag">Curriculum</span> How they teach owners</h4>
+        <div class="lvl1"><span class="lvl1-l">What Level&nbsp;1 looks like</span><p>RSVP or walk in to a 30-minute coffee chat (9:15 to 9:45 AM, Tue/Thu). No prep, no laptop, no prior AI use. The owner describes their business and the table talks through where AI could realistically help.</p></div>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Structure</span><span class="fld-v">No modules or levels. Standalone weekly coffee chats; depth accrues through repeat attendance.</span></div><div class="fld"><span class="fld-l">Delivery</span><span class="fld-v">In-person</span></div><div class="fld"><span class="fld-l">Hands-on vs lecture</span><span class="fld-v">Discussion-based: candid Q&amp;A, peer examples, myth-busting. No guided tool exercises.</span></div><div class="fld"><span class="fld-l">Price</span><span class="fld-v">Free, always. No upsell at the meetup.</span></div></div>
+        <div class="subfld"><span class="subfld-l">Example topics</span><ul class="tags"><li>Which AI tools are worth paying for</li><li>Automating specific tasks</li><li>Where AI falls short</li><li>What other Memphis businesses are doing with AI</li><li>Getting started if you've been putting it off</li></ul></div>
+        <div class="subfld"><span class="subfld-l">Teaching methods</span><ul class="tick"><li>A 30-minute, no-slides format that fits an owner's morning</li><li>'Plain English, Always': every AI use explained so a 10th grader gets it</li><li>A hard no-pitch rule, even though a consultancy funds the room</li></ul></div>
+        </div>
+        <div class="pillar">
+        <h4>Events &amp; community</h4>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Cadence</span><span class="fld-v">Weekly; Tuesdays and Thursdays confirmed in the Aug-Oct 2026 window</span></div><div class="fld"><span class="fld-l">Format</span><span class="fld-v">~30-minute unstructured coffee-shop conversation, table-sized groups</span></div><div class="fld"><span class="fld-l">Size</span><span class="fld-v">Small, table-sized; no attendance figures published</span></div><div class="fld"><span class="fld-l">Community size</span><span class="fld-v">Not disclosed; intentionally small-group</span></div></div>
+        <div class="note"><span class="subfld-l">Progression</span><p>Walk-in to weekly regular; some become paying WeAddBots clients. No published ladder.</p></div>
+        <div class="note"><span class="subfld-l">How they grow</span><p>Rotating Memphis-metro venues, an RSVP list and newsletter, the host's local network.</p></div>
+        </div>
+        <div class="pillar">
+        <h4>Model, brand &amp; funding</h4>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Entity</span><span class="fld-v">For-profit meetup: top-of-funnel for WeAddBots, an AI-automation consultancy</span></div><div class="fld"><span class="fld-l">Funding</span><span class="fld-v">Free to attendees; subsidized by the host's consulting business</span></div><div class="fld"><span class="fld-l">Launched</span><span class="fld-v">Not published</span></div><div class="fld"><span class="fld-l">Audience</span><span class="fld-v">Non-technical owners and operators: restaurants, service companies, professional firms, retail, healthcare, solo entrepreneurs</span></div></div>
+        <div class="note"><span class="subfld-l">Positioning &amp; name</span><p>Hyper-local and anti-hype: a neighbor over coffee, not an expert on a stage. 'Memphis AI Meetup' is plainly geographic for discoverability.</p></div>
+        </div>
+        <div class="pillar pillar-take">
+        <h4>Top 3 moves to borrow</h4>
+        <ul class="tick"><li>A 30-minute, no-slides coffee chat as the zero-commitment entry event</li><li>Rotating venues across neighborhoods so the community comes to the owners</li><li>A hard no-pitch rule that keeps the sponsor's selling out of the room</li></ul>
+        </div>
+        <div class="sources"><span class="subfld-l">Sources &middot; confidence: medium</span><div class="srcwrap"><a href="https://www.weaddbots.com/events/memphis-ai-meetup" target="_blank" rel="noopener">www.weaddbots.com</a><a href="https://www.weaddbots.com/about" target="_blank" rel="noopener">www.weaddbots.com</a><a href="https://www.weaddbots.com/build-with-me" target="_blank" rel="noopener">www.weaddbots.com</a><a href="https://www.weaddbots.com/newsletter" target="_blank" rel="noopener">www.weaddbots.com</a><a href="https://www.weaddbots.com/locations/" target="_blank" rel="noopener">www.weaddbots.com</a><a href="https://www.weaddbots.com/services" target="_blank" rel="noopener">www.weaddbots.com</a><a href="https://www.linkedin.com/in/scottfinney/" target="_blank" rel="noopener">www.linkedin.com</a></div></div>
+        </div>
+    </details>
+
+    <details class="card" id="p-ownerrx"
+        data-cat="forprofit" data-fmt="other" data-price="unknown" data-status="active"
+        data-name="ownerrx" data-region="national (us); founder/operator based in washington, dc">
+      <summary>
+        <div class="card-head">
+          <div class="card-title">
+            <h3>OwnerRx</h3>
+            <div class="card-meta">National <a class="ext" href="https://www.ownerrx.com/" target="_blank" rel="noopener">visit&#8599;</a></div>
+          </div>
+          <div class="chips"><span class="chip cat">For-profit / Cohort</span><span class="chip status active">Active</span></div>
+        </div>
+        <p class="card-mission">For-profit cohort training and free diagnostic tools helping owners find their real operational bottleneck before deploying AI. Framed against the stat that 70% of AI projects fail in year one (BCG, 2025).</p>
+        <span class="expand">Full profile <span class="chev">&#9662;</span></span>
+      </summary>
+      <div class="card-body">
+        <div class="pillar">
+        <h4>Model, brand &amp; funding</h4>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Entity</span><span class="fld-v">For-profit AI education company: cohorts, free diagnostics, a weekly newsletter, consulting</span></div><div class="fld"><span class="fld-l">Funding</span><span class="fld-v">Bootstrapped; cohort tuition and consulting revenue. The founder previously bootstrapped Corner Alliance to $30M+ revenue.</span></div><div class="fld"><span class="fld-l">Launched</span><span class="fld-v">~2025; three cohorts completed by Feb 2026</span></div><div class="fld"><span class="fld-l">Audience</span><span class="fld-v">Owners of $2-10M businesses who know AI matters but haven't started; a second tier serves the operators inside those companies</span></div></div>
+        </div>
+        <div class="sources"><span class="subfld-l">Sources &middot; confidence: medium</span><div class="srcwrap"><a href="https://www.ownerrx.com/" target="_blank" rel="noopener">www.ownerrx.com</a><a href="https://ai-cohort.ownerrx.com/" target="_blank" rel="noopener">ai-cohort.ownerrx.com</a><a href="https://ownerrx.com/tools" target="_blank" rel="noopener">ownerrx.com</a><a href="https://newsletter.ownerrx.com/" target="_blank" rel="noopener">newsletter.ownerrx.com</a><a href="https://www.linkedin.com/in/alanpentz" target="_blank" rel="noopener">www.linkedin.com</a><a href="https://podcasts.apple.com/us/podcast/ownerrx-podcast-with-alan-pentz/id1725703477" target="_blank" rel="noopener">podcasts.apple.com</a><a href="https://21hats.com/i-can-help-with-ai-do-owners-want-help/" target="_blank" rel="noopener">21hats.com</a></div></div>
+        </div>
+    </details>
+
+    <details class="card" id="p-ai-fluency-for-small-businesses-anthropic"
+        data-cat="community" data-fmt="selfserve" data-price="free" data-status="active"
+        data-name="ai fluency for small businesses (anthropic)" data-region="national / global (us-based, distributed via paypal merchant network and nonprofit partners)">
+      <summary>
+        <div class="card-head">
+          <div class="card-title">
+            <h3>AI Fluency for Small Businesses (Anthropic)</h3>
+            <div class="card-meta">National / global <a class="ext" href="https://anthropic.skilljar.com/ai-fluency-for-small-businesses" target="_blank" rel="noopener">visit&#8599;</a></div>
+          </div>
+          <div class="chips"><span class="chip cat">Grassroots / Meetup</span><span class="chip">Self-serve</span><span class="chip price free">Free</span><span class="chip status active">Active</span></div>
+        </div>
+        <p class="card-mission">Free vendor-produced course teaching owners and their staff to work with AI safely and effectively, distributed through PayPal's merchant network toward a 25M-person digital-skills goal.</p>
+        <span class="expand">Full profile <span class="chev">&#9662;</span></span>
+      </summary>
+      <div class="card-body">
+        <div class="pillar pillar-curric">
+        <h4><span class="pil-tag">Curriculum</span> How they teach owners</h4>
+        <div class="lvl1"><span class="lvl1-l">What Level&nbsp;1 looks like</span><p>Lesson one reframes AI as a collaborator and introduces the 4D Framework: Delegation, Description, Discernment, Diligence. Lesson two has the owner write their business's values, goals, and constraints, so every later exercise is grounded in their own business.</p></div>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Structure</span><span class="fld-v">Nine video lessons, ~54 minutes total, in four sections, ending with a quiz and a shareable certificate.</span></div><div class="fld"><span class="fld-l">Delivery</span><span class="fld-v">Online, self-paced; a Claude SMB Tour runs in person</span></div><div class="fld"><span class="fld-l">Hands-on vs lecture</span><span class="fld-v">Short videos carry the concepts; the spine is doing: a business-context doc, live prompting loops, a reusable workflow template, a written AI-use policy.</span></div><div class="fld"><span class="fld-l">Price</span><span class="fld-v">Free, ungated</span></div></div>
+        <div class="subfld"><span class="subfld-l">Example topics</span><ul class="tags"><li>The 4D Framework</li><li>What today's AI can and can't reliably do</li><li>How language models pick words, shown live in a next-token simulator</li><li>Research and execution loops worked on real business tasks</li></ul></div>
+        <div class="subfld"><span class="subfld-l">Teaching methods</span><ul class="tick"><li>A day-one business-context exercise that grounds every later prompt</li><li>Learners leave with artifacts: a workflow template and a written AI-use policy</li><li>Real SMB owners demo their own operations on camera</li></ul></div>
+        </div>
+        <div class="pillar">
+        <h4>Events &amp; community</h4>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Cadence</span><span class="fld-v">Self-paced; tour dates vary</span></div><div class="fld"><span class="fld-l">Format</span><span class="fld-v">On-demand course; in-person tour stops complement it</span></div><div class="fld"><span class="fld-l">Size</span><span class="fld-v">n/a (a course, not recurring events)</span></div><div class="fld"><span class="fld-l">Community size</span><span class="fld-v">1M+ learners reached across the AI Fluency program, per PayPal</span></div></div>
+        <div class="note"><span class="subfld-l">Progression</span><p>Mindset, mental model, applied loops, then a deployed workflow and policy with certificate. No standing community behind it.</p></div>
+        <div class="note"><span class="subfld-l">How they grow</span><p>Distribution-led: PayPal's merchant base, nonprofit partners, the SMB Tour.</p></div>
+        </div>
+        <div class="pillar">
+        <h4>Model, brand &amp; funding</h4>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Entity</span><span class="fld-v">Vendor-produced free course (Anthropic), PayPal distribution</span></div><div class="fld"><span class="fld-l">Funding</span><span class="fld-v">Corporate-funded, free to learners</span></div><div class="fld"><span class="fld-l">Launched</span><span class="fld-v">2026</span></div><div class="fld"><span class="fld-l">Audience</span><span class="fld-v">Owners and their non-technical staff across functions; explicitly not developers</span></div></div>
+        <div class="note"><span class="subfld-l">Positioning &amp; name</span><p>'Fluency' signals durable capability, like language fluency, scoped to small business. Recurring frame: AI is a collaborator, not a tool.</p></div>
+        </div>
+        <div class="pillar pillar-take">
+        <h4>Top 3 moves to borrow</h4>
+        <ul class="tick"><li>Front-load a business-context exercise and ground every prompt in it</li><li>End the track with artifacts: a workflow template and an AI-use policy</li><li>A named framework gives non-technical owners a shared vocabulary</li></ul>
+        </div>
+        <div class="sources"><span class="subfld-l">Sources &middot; confidence: high</span><div class="srcwrap"><a href="https://anthropic.skilljar.com/ai-fluency-for-small-businesses" target="_blank" rel="noopener">anthropic.skilljar.com</a><a href="https://www.anthropic.com/news/claude-for-small-business" target="_blank" rel="noopener">www.anthropic.com</a><a href="https://newsroom.paypal-corp.com/2026-05-PayPal-partners-with-Anthropic-to-Close-the-AI-Gap-for-Small-Businesses" target="_blank" rel="noopener">newsroom.paypal-corp.com</a><a href="https://findskill.ai/blog/anthropic-ai-fluency-small-business-course-breakdown/" target="_blank" rel="noopener">findskill.ai</a><a href="https://beginnersinai.org/ai-fluency-for-small-business-course/" target="_blank" rel="noopener">beginnersinai.org</a><a href="https://www.classcentral.com/course/anthropic-academy-ai-fluency-for-small-businesses-538281" target="_blank" rel="noopener">www.classcentral.com</a><a href="https://claude.com/resources/courses" target="_blank" rel="noopener">claude.com</a></div></div>
+        </div>
+    </details>
+
+    <details class="card" id="p-applied-ai-for-busy-pros-small-biz"
+        data-cat="community" data-fmt="events" data-price="paid" data-status="unknown"
+        data-name="applied ai for busy pros &amp; small biz" data-region="tampa, florida (tampa bay)">
+      <summary>
+        <div class="card-head">
+          <div class="card-title">
+            <h3>Applied AI for Busy Pros &amp; Small Biz</h3>
+            <div class="card-meta">Tampa, Florida <a class="ext" href="https://www.meetup.com/applied-ai-for-professionals-and-small-businesses/" target="_blank" rel="noopener">visit&#8599;</a></div>
+          </div>
+          <div class="chips"><span class="chip cat">Grassroots / Meetup</span><span class="chip">Events-only</span><span class="chip price paid">Paid</span><span class="chip status unknown">Unknown</span></div>
+        </div>
+        <p class="card-mission">A Tampa Meetup for busy professionals and owners: work smarter with practical AI, no tech background needed. One event held to date.</p>
+        <span class="expand">Full profile <span class="chev">&#9662;</span></span>
+      </summary>
+      <div class="card-body">
+        <div class="pillar pillar-curric">
+        <h4><span class="pil-tag">Curriculum</span> How they teach owners</h4>
+        <div class="lvl1"><span class="lvl1-l">What Level&nbsp;1 looks like</span><p>The one documented event: 'What Can ChatGPT Really Do? A Hands-On Intro to AI for Work and Life,' a 60-90 minute Zoom session with live demos and Q&amp;A. 16 people attended.</p></div>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Structure</span><span class="fld-v">No curriculum or sequence; standalone 60-90 minute workshops. One event held as of research.</span></div><div class="fld"><span class="fld-l">Delivery</span><span class="fld-v">Primarily Zoom; in-person Tampa meetups stated but none documented</span></div><div class="fld"><span class="fld-l">Hands-on vs lecture</span><span class="fld-v">Live guided demo plus Q&amp;A.</span></div><div class="fld"><span class="fld-l">Price</span><span class="fld-v">Workshops paid, figures undisclosed; occasional free sessions</span></div></div>
+        <div class="subfld"><span class="subfld-l">Example topics</span><ul class="tags"><li>What ChatGPT can really do</li><li>Automating routine work</li><li>Content and marketing materials</li><li>Data analysis and decisions</li><li>Operations and customer service</li></ul></div>
+        <div class="subfld"><span class="subfld-l">Teaching methods</span><ul class="tick"><li>An outcome-first pitch: save time, cut costs, stay competitive</li><li>Short single-topic sessions with demo and Q&amp;A</li><li>Explicit no-tech-background framing</li></ul></div>
+        </div>
+        <div class="pillar">
+        <h4>Events &amp; community</h4>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Cadence</span><span class="fld-v">Irregular and unproven; no upcoming events listed at research time</span></div><div class="fld"><span class="fld-l">Format</span><span class="fld-v">60-90 minute live Zoom workshop</span></div><div class="fld"><span class="fld-l">Size</span><span class="fld-v">16 attendees at the one confirmed event</span></div><div class="fld"><span class="fld-l">Community size</span><span class="fld-v">~28 Meetup members</span></div></div>
+        <div class="note"><span class="subfld-l">Progression</span><p>None defined; flat one-off workshops.</p></div>
+        <div class="note"><span class="subfld-l">How they grow</span><p>Passive Meetup discovery in a crowded Tampa field of 7+ AI groups; no email list or partnerships found.</p></div>
+        </div>
+        <div class="pillar">
+        <h4>Model, brand &amp; funding</h4>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Entity</span><span class="fld-v">Informal solo-organizer Meetup</span></div><div class="fld"><span class="fld-l">Funding</span><span class="fld-v">Paid workshops to the organizer; no institutional backing</span></div><div class="fld"><span class="fld-l">Launched</span><span class="fld-v">2025</span></div><div class="fld"><span class="fld-l">Audience</span><span class="fld-v">Owners, freelancers, managers, working professionals; non-technical by design</span></div></div>
+        <div class="note"><span class="subfld-l">Positioning &amp; name</span><p>'Busy Pros' and 'Small Biz' name the time-strapped operator. Targets operators where Tampa's other AI groups target builders.</p></div>
+        </div>
+        <div class="pillar pillar-take">
+        <h4>Top 3 moves to borrow</h4>
+        <ul class="tick"><li>An entry-workshop title that asks the owner's actual question</li><li>Operator-not-builder targeting in a developer-heavy field</li><li>The data point: one event and 28 members shows framing alone doesn't build a community</li></ul>
+        </div>
+        <div class="sources"><span class="subfld-l">Sources &middot; confidence: low</span><div class="srcwrap"><a href="https://www.meetup.com/applied-ai-for-professionals-and-small-businesses/" target="_blank" rel="noopener">www.meetup.com</a><a href="https://www.meetup.com/applied-ai-for-professionals-and-small-businesses/events/" target="_blank" rel="noopener">www.meetup.com</a><a href="https://tampa.dev/tampa-ai-meetups" target="_blank" rel="noopener">tampa.dev</a><a href="https://www.nucamp.co/blog/coding-bootcamp-tampa-fl-top-10-mustattend-tech-meetups-and-conferences-in-tampa" target="_blank" rel="noopener">www.nucamp.co</a></div></div>
+        </div>
+    </details>
+
+    <details class="card" id="p-main-street-ai-collective"
+        data-cat="community" data-fmt="hybrid" data-price="paid" data-status="active"
+        data-name="main street ai collective" data-region="austin, texas (in-person) + online workshops">
+      <summary>
+        <div class="card-head">
+          <div class="card-title">
+            <h3>Main Street AI Collective</h3>
+            <div class="card-meta">Austin, Texas <a class="ext" href="https://www.meetup.com/main-street-ai/" target="_blank" rel="noopener">visit&#8599;</a></div>
+          </div>
+          <div class="chips"><span class="chip cat">Grassroots / Meetup</span><span class="chip">Hybrid</span><span class="chip price paid">Paid</span><span class="chip status active">Active</span></div>
+        </div>
+        <p class="card-mission">Austin meetup helping owners and solo creators build smarter businesses with AI. Every session pairs hands-on skill-building with community connection.</p>
+        <span class="expand">Full profile <span class="chev">&#9662;</span></span>
+      </summary>
+      <div class="card-body">
+        <div class="pillar pillar-curric">
+        <h4><span class="pil-tag">Curriculum</span> How they teach owners</h4>
+        <div class="lvl1"><span class="lvl1-l">What Level&nbsp;1 looks like</span><p>A newcomer joins a free single-topic session named for its deliverable, like watching a complete small-business website get built end to end, copy to visuals to publish. Watch it happen, then do it yourself.</p></div>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Structure</span><span class="fld-v">No sequenced curriculum or levels. Drop-in, self-contained sessions, each built around one practical outcome.</span></div><div class="fld"><span class="fld-l">Delivery</span><span class="fld-v">Hybrid: in-person Austin meetups plus online workshops</span></div><div class="fld"><span class="fld-l">Hands-on vs lecture</span><span class="fld-v">Demo-led and do-it-alongside, not lecture.</span></div><div class="fld"><span class="fld-l">Price</span><span class="fld-v">Free; no paid program identified</span></div></div>
+        <div class="subfld"><span class="subfld-l">Example topics</span><ul class="tags"><li>Building a complete small-business website with AI</li><li>Automating repetitive tasks</li><li>AI-powered marketing campaigns</li><li>Practical skill-building for running a smarter business</li></ul></div>
+        <div class="subfld"><span class="subfld-l">Teaching methods</span><ul class="tick"><li>Live end-to-end build demos with one concrete deliverable per session</li><li>Session titles that name the takeaway, not the technology</li><li>Hybrid reach: Austin in person, workshops online</li></ul></div>
+        </div>
+        <div class="pillar">
+        <h4>Events &amp; community</h4>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Cadence</span><span class="fld-v">Not published</span></div><div class="fld"><span class="fld-l">Format</span><span class="fld-v">Single-topic session: live demo or hands-on build plus networking</span></div><div class="fld"><span class="fld-l">Size</span><span class="fld-v">Not published</span></div><div class="fld"><span class="fld-l">Community size</span><span class="fld-v">Unknown; appears small next to established Austin AI groups (the adjacent AIAM group cites 2,300+ members)</span></div></div>
+        <div class="note"><span class="subfld-l">Progression</span><p>None published; drop-in, topic by topic.</p></div>
+        <div class="note"><span class="subfld-l">How they grow</span><p>Meetup discovery plus recurring free sessions.</p></div>
+        </div>
+        <div class="pillar">
+        <h4>Model, brand &amp; funding</h4>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Entity</span><span class="fld-v">Informal organizer-led meetup</span></div><div class="fld"><span class="fld-l">Funding</span><span class="fld-v">Unknown. Events appear free; no sponsor or fee identified.</span></div><div class="fld"><span class="fld-l">Launched</span><span class="fld-v">Not published</span></div><div class="fld"><span class="fld-l">Audience</span><span class="fld-v">Non-technical owners, solo founders, and independent creators; explicitly not developers</span></div></div>
+        <div class="note"><span class="subfld-l">Positioning &amp; name</span><p>'Main Street' names the everyday-owner economy; 'Collective' names a peer group. AI for the local business owner, not Silicon Valley.</p></div>
+        </div>
+        <div class="pillar pillar-take">
+        <h4>Top 3 moves to borrow</h4>
+        <ul class="tick"><li>Name each session after its deliverable so owners know what they walk away with</li><li>Live watch-it-happen builds lower intimidation better than talks</li><li>Free drop-in sessions keep the top of the funnel wide</li></ul>
+        </div>
+        <div class="sources"><span class="subfld-l">Sources &middot; confidence: low</span><div class="srcwrap"><a href="https://www.meetup.com/main-street-ai/ (group&#x27;s own Meetup page &#183; description, audience, hybrid format, free hands-on sessions, and the website-build live demo were retrieved from its indexed content; page bot-blocks direct fetch)" target="_blank" rel="noopener">www.meetup.com</a><a href="https://www.austinai.events/ (Austin AI event aggregator &#183; cross-checked; did not list Main Street AI Collective events at time of research)" target="_blank" rel="noopener">www.austinai.events</a><a href="https://www.meetup.com/ai-automation-and-marketing/ (adjacent Austin group AIAM, used only for scale/context comparison &#183; 2,300+ members)" target="_blank" rel="noopener">www.meetup.com</a></div></div>
+        </div>
+    </details>
+
+    <details class="card" id="p-florida-ai-association-flaia"
+        data-cat="nonprofit" data-fmt="events" data-price="free" data-status="active"
+        data-name="florida ai association (flaia)" data-region="orlando, florida (milk district) &#183; brands itself statewide as &quot;florida&quot;">
+      <summary>
+        <div class="card-head">
+          <div class="card-title">
+            <h3>Florida AI Association (FLAIA)</h3>
+            <div class="card-meta">Orlando, Florida <a class="ext" href="https://www.meetup.com/florida-ai-association/" target="_blank" rel="noopener">visit&#8599;</a></div>
+          </div>
+          <div class="chips"><span class="chip cat">Nonprofit / Assoc.</span><span class="chip">Events-only</span><span class="chip price free">Free</span><span class="chip status active">Active</span></div>
+        </div>
+        <p class="card-mission">An Orlando meetup running one recurring event, 'AI for Confused Business Owners': a biergarten Q&amp;A social for operators intimidated by the headlines.</p>
+        <span class="expand">Full profile <span class="chev">&#9662;</span></span>
+      </summary>
+      <div class="card-body">
+        <div class="pillar pillar-curric">
+        <h4><span class="pil-tag">Curriculum</span> How they teach owners</h4>
+        <div class="lvl1"><span class="lvl1-l">What Level&nbsp;1 looks like</span><p>Show up to Barley &amp; Vine Biergarten on a Tuesday at 5:30, drinks in hand, and ask the AI questions you haven't had answered. No agenda beyond that.</p></div>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Structure</span><span class="fld-v">No curriculum, levels, or modules. One recurring social event.</span></div><div class="fld"><span class="fld-l">Delivery</span><span class="fld-v">In-person</span></div><div class="fld"><span class="fld-l">Hands-on vs lecture</span><span class="fld-v">Neither lecture nor lab: informal, question-driven conversation.</span></div><div class="fld"><span class="fld-l">Price</span><span class="fld-v">$0; discounted drinks for early arrivals</span></div></div>
+        <div class="subfld"><span class="subfld-l">Example topics</span><ul class="tags"><li>Practical AI and automation in a business</li><li>Operational efficiency</li><li>Secure and responsible practices</li><li>Open Q&amp;A on whatever owners bring</li></ul></div>
+        <div class="subfld"><span class="subfld-l">Teaching methods</span><ul class="tick"><li>The event name names the owner's emotional state, not the technology</li><li>A biergarten instead of a classroom</li><li>Owners set the agenda with their own questions</li></ul></div>
+        </div>
+        <div class="pillar">
+        <h4>Events &amp; community</h4>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Cadence</span><span class="fld-v">Monthly, Tuesdays 5:30 PM</span></div><div class="fld"><span class="fld-l">Format</span><span class="fld-v">Relaxed biergarten social: networking plus open AI Q&amp;A</span></div><div class="fld"><span class="fld-l">Size</span><span class="fld-v">Roughly 1-3 attendees at recent instances</span></div><div class="fld"><span class="fld-l">Community size</span><span class="fld-v">~81 Meetup members; ~8 Instagram followers</span></div></div>
+        <div class="note"><span class="subfld-l">Progression</span><p>None. Flat and come-as-you-are; no contributor path.</p></div>
+        <div class="note"><span class="subfld-l">How they grow</span><p>Meetup discovery, Instagram, Eventbrite; no referral or content engine.</p></div>
+        </div>
+        <div class="pillar">
+        <h4>Model, brand &amp; funding</h4>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Entity</span><span class="fld-v">Solo-organizer grassroots meetup; no formal entity found</span></div><div class="fld"><span class="fld-l">Funding</span><span class="fld-v">Appears self-funded; the only revenue signal is a venue drink partnership</span></div><div class="fld"><span class="fld-l">Launched</span><span class="fld-v">Events observed from Feb 2026</span></div><div class="fld"><span class="fld-l">Audience</span><span class="fld-v">Owners and operators who are confused or curious about AI; not developers</span></div></div>
+        <div class="note"><span class="subfld-l">Positioning &amp; name</span><p>'Florida AI Association' signals statewide scope and institutional weight the group doesn't yet have. The event name is the real asset.</p></div>
+        </div>
+        <div class="pillar pillar-take">
+        <h4>Top 3 moves to borrow</h4>
+        <ul class="tick"><li>Emotional-state naming: the lowest-friction hook in the field</li><li>A third-place venue as the classroom</li><li>A near-zero-cost operating model: free venue social plus a drink partnership</li></ul>
+        </div>
+        <div class="sources"><span class="subfld-l">Sources &middot; confidence: low &#183; the org is very small with a thin public footprint; Meetup blurb, Instagram bio, and event copy are consistent but shallow, and details like founding year, formal legal status, organizer identity, and any deeper curriculum could not be confirmed. Meetup past-events and beacons.ai link hub were login-gated / 403 and could not be fully read.</span><div class="srcwrap"><a href="https://www.meetup.com/florida-ai-association/" target="_blank" rel="noopener">www.meetup.com</a><a href="https://www.instagram.com/floridaaiassociation/" target="_blank" rel="noopener">www.instagram.com</a><a href="https://www.meetup.com/florida-ai-association/events/" target="_blank" rel="noopener">www.meetup.com</a><a href="https://beacons.ai/floridaai (403 / not fully accessible)" target="_blank" rel="noopener">beacons.ai</a><a href="Web search surfacing FLAIA event copy: Barley &amp; Vine Biergarten, promo code FLAIAMEMBER, &#x27;relaxed AI social event&#x27; framing" target="_blank" rel="noopener">Web search surfacing FLAIA event copy: Barley &amp; Vine Biergarten, promo code FLAIAMEMBER, &#x27;relaxed AI social event&#x27; framing</a></div></div>
+        </div>
+    </details>
+
+    <details class="card" id="p-small-business-b-ai-sics"
+        data-cat="nonprofit" data-fmt="hybrid" data-price="free" data-status="active"
+        data-name="small business b(ai)sics" data-region="national (united states); delivered locally through 1,500+ state and local chambers of commerce">
+      <summary>
+        <div class="card-head">
+          <div class="card-title">
+            <h3>Small Business B(AI)sics</h3>
+            <div class="card-meta">National <a class="ext" href="https://www.uschamber.com/co/small-business-ai-training" target="_blank" rel="noopener">visit&#8599;</a></div>
+          </div>
+          <div class="chips"><span class="chip cat">Nonprofit / Assoc.</span><span class="chip">Hybrid</span><span class="chip price free">Free</span><span class="chip status active">Active</span></div>
+        </div>
+        <p class="card-mission">U.S. Chamber Foundation program teaching non-technical owners foundational AI skills, free, with a stated goal of training 40,000 small businesses in three years.</p>
+        <span class="expand">Full profile <span class="chev">&#9662;</span></span>
+      </summary>
+      <div class="card-body">
+        <div class="pillar pillar-curric">
+        <h4><span class="pil-tag">Curriculum</span> How they teach owners</h4>
+        <div class="lvl1"><span class="lvl1-l">What Level&nbsp;1 looks like</span><p>Lesson one, 'AI Basics,' is a plain-language overview of terms, concepts, and common tools. The full four-lesson course takes about 30 minutes, finishable in one sitting.</p></div>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Structure</span><span class="fld-v">One on-demand course of four sequential lessons (Basics, Prompting, Using AI at Your Business, Safety), plus in-person workshops scheduled locally by chambers.</span></div><div class="fld"><span class="fld-l">Delivery</span><span class="fld-v">Hybrid: online course plus chamber-hosted workshops and webinars</span></div><div class="fld"><span class="fld-l">Hands-on vs lecture</span><span class="fld-v">Application-heavy for its length: a prompt-writing lesson, then function-by-function walkthroughs with copy-paste example prompts.</span></div><div class="fld"><span class="fld-l">Price</span><span class="fld-v">$0; underwritten by a $5M Google.org grant</span></div></div>
+        <div class="subfld"><span class="subfld-l">Example topics</span><ul class="tags"><li>AI basics and key terminology</li><li>Prompt writing</li><li>Use cases and sample prompts by function: marketing, sales, service, HR, finance, strategy</li><li>Data safety and responsible use</li></ul></div>
+        <div class="subfld"><span class="subfld-l">Teaching methods</span><ul class="tick"><li>A copy-paste prompt library: '100 AI Prompts for Every Small Business,' organized by business function</li><li>A ~30-minute total course length engineered for time-strapped owners</li><li>A completion certificate and shareable web badge</li></ul></div>
+        </div>
+        <div class="pillar">
+        <h4>Events &amp; community</h4>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Cadence</span><span class="fld-v">Rolling; workshop schedules set locally by each chamber</span></div><div class="fld"><span class="fld-l">Format</span><span class="fld-v">Chamber-cohosted in-person classes plus live and on-demand webinars</span></div><div class="fld"><span class="fld-l">Size</span><span class="fld-v">Not published</span></div><div class="fld"><span class="fld-l">Community size</span><span class="fld-v">Target: 40,000 businesses trained over three years; 60+ chamber partners across 32+ states</span></div></div>
+        <div class="note"><span class="subfld-l">Progression</span><p>Free online course and badge, then a local workshop for hands-on practice and peers, then the supplemental Google AI Professional Certificate.</p></div>
+        <div class="note"><span class="subfld-l">How they grow</span><p>Distribution through the Chamber federation of 1,500+ state and local chambers, with a shared communications toolkit.</p></div>
+        </div>
+        <div class="pillar">
+        <h4>Model, brand &amp; funding</h4>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Entity</span><span class="fld-v">National nonprofit initiative: U.S. Chamber plus its 501(c)(3) Foundation</span></div><div class="fld"><span class="fld-l">Funding</span><span class="fld-v">A $5M Google.org grant via its AI Opportunity Fund; free to participants</span></div><div class="fld"><span class="fld-l">Launched</span><span class="fld-v">2025; online courses live April 2026</span></div><div class="fld"><span class="fld-l">Audience</span><span class="fld-v">Non-technical U.S. owners across ~nine verticals: retail, restaurants, services, contractors</span></div></div>
+        <div class="note"><span class="subfld-l">Positioning &amp; name</span><p>'B(AI)sics' embeds AI inside 'basics': entry-level by name. Delivered under the Chamber's CO brand; a century-old trust brand helping ordinary entrepreneurs.</p></div>
+        </div>
+        <div class="pillar pillar-take">
+        <h4>Top 3 moves to borrow</h4>
+        <ul class="tick"><li>A 30-minute four-lesson course as the frictionless first touch</li><li>A function-organized prompt library: cheap to build, high perceived value</li><li>Free online fundamentals for scale, local in-person workshops for depth and trust</li></ul>
+        </div>
+        <div class="sources"><span class="subfld-l">Sources &middot; confidence: high</span><div class="srcwrap"><a href="https://www.uschamber.com/small-business/u-s-chamber-of-commerce-and-u-s-chamber-foundation-launch-free-ai-training-courses-for-small-businesses-nationwide" target="_blank" rel="noopener">www.uschamber.com</a><a href="https://www.uschamber.com/chambers-of-commerce/u-s-chamber-and-u-s-chamber-foundation-launch-small-business-baisics-initiative-with-support-of-google-org" target="_blank" rel="noopener">www.uschamber.com</a><a href="https://www.uschamber.com/co/small-business-ai-training" target="_blank" rel="noopener">www.uschamber.com</a><a href="https://www.uschamber.com/co/start/strategy/ai-training-guide-small-business" target="_blank" rel="noopener">www.uschamber.com</a><a href="https://www.uschamber.com/co/events/small-business-baisics-toolkit" target="_blank" rel="noopener">www.uschamber.com</a><a href="https://blog.google/company-news/outreach-and-initiatives/grow-with-google/small-businesses-grow-with-google-ai/" target="_blank" rel="noopener">blog.google</a><a href="https://www.forbes.com/sites/eshachhabra/2026/05/21/ai-training-for-small-businesses-goes-nationwide/" target="_blank" rel="noopener">www.forbes.com</a><a href="https://www.pymnts.com/artificial-intelligence-2/2025/google-and-us-chamber-partner-on-ai-training-for-small-businesses/" target="_blank" rel="noopener">www.pymnts.com</a></div></div>
+        </div>
+    </details>
+
+    <details class="card" id="p-welcome-to-chinatown-ny-state-ai-specialist-eac-ai-training-hub"
+        data-cat="nonprofit" data-fmt="cohort" data-price="paid" data-status="active"
+        data-name="welcome to chinatown &#183; ny state ai specialist eac / ai training hub" data-region="new york state (based in manhattan&#x27;s chinatown; statewide mandate across 25+ eacs)">
+      <summary>
+        <div class="card-head">
+          <div class="card-title">
+            <h3>Welcome to Chinatown &#183; NY State AI Specialist EAC / AI Training Hub</h3>
+            <div class="card-meta">New York State <a class="ext" href="https://welcometochinatown.com/" target="_blank" rel="noopener">visit&#8599;</a></div>
+          </div>
+          <div class="chips"><span class="chip cat">Nonprofit / Assoc.</span><span class="chip">Cohort</span><span class="chip price paid">Paid</span><span class="chip status active">Active</span></div>
+        </div>
+        <p class="card-mission">Chinatown nonprofit, now New York's designated AI Specialist EAC, teaching immigrant-run legacy businesses to adopt AI. Teaching creed: 'It starts with the problem, not the technology.'</p>
+        <span class="expand">Full profile <span class="chev">&#9662;</span></span>
+      </summary>
+      <div class="card-body">
+        <div class="pillar pillar-curric">
+        <h4><span class="pil-tag">Curriculum</span> How they teach owners</h4>
+        <div class="lvl1"><span class="lvl1-l">What Level&nbsp;1 looks like</span><p>An owner maps their workflow and names one pain point before opening a laptop, usually at a low-pressure food-and-drinks peer session where owners who built tools tell the story.</p></div>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Structure</span><span class="fld-v">A three-prong state mandate: 1:1 AI support for entrepreneurs, train-the-trainer for New York's 25+ other EACs, and one standardized statewide AI curriculum, still in development as of mid-2026.</span></div><div class="fld"><span class="fld-l">Delivery</span><span class="fld-v">In-person at the 115 Bowery Innovation Hub; statewide train-the-trainer as it scales</span></div><div class="fld"><span class="fld-l">Hands-on vs lecture</span><span class="fld-v">Owners co-build one real tool with a technologist mentor; peers who succeeded teach the next owners.</span></div><div class="fld"><span class="fld-l">Price</span><span class="fld-v">Free (state-funded EAC model)</span></div></div>
+        <div class="subfld"><span class="subfld-l">Example topics</span><ul class="tags"><li>A custom operations dashboard tracking flavors and revenue across 6 locations (Soft Swerve)</li><li>A procurement tool built in nine evenings that cut a $150-200/month subscription</li><li>ChatGPT and Claude for everyday operations and outreach</li></ul></div>
+        <div class="subfld"><span class="subfld-l">Teaching methods</span><ul class="tick"><li>Workflow mapping before any tool is chosen</li><li>Owner-to-owner demos over food and drinks, as both teaching and recruiting</li><li>Each owner paired with a technologist to co-build one real tool</li></ul></div>
+        </div>
+        <div class="pillar">
+        <h4>Events &amp; community</h4>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Cadence</span><span class="fld-v">Ad hoc, tied to Hub programming; the Hub opened fall 2024</span></div><div class="fld"><span class="fld-l">Format</span><span class="fld-v">Informal owner-led storytelling with the technologists in the room; deliberately not formal presentation</span></div><div class="fld"><span class="fld-l">Size</span><span class="fld-v">~50 at the flagship 'AI on Main Street' event</span></div><div class="fld"><span class="fld-l">Community size</span><span class="fld-v">~50 at the first Tech Week event; statewide reach through 25+ EACs is the goal, not yet realized</span></div></div>
+        <div class="note"><span class="subfld-l">Progression</span><p>Peer event, 1:1 support, co-build a tool, then become a peer teacher and case study.</p></div>
+        <div class="note"><span class="subfld-l">How they grow</span><p>Neighborhood trust plus a state designation that opens a distribution channel through every EAC in New York.</p></div>
+        </div>
+        <div class="pillar">
+        <h4>Model, brand &amp; funding</h4>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Entity</span><span class="fld-v">Nonprofit community development org; state-designated AI training hub</span></div><div class="fld"><span class="fld-l">Funding</span><span class="fld-v">State EAC funding plus a $100K ESD capital grant for the Hub</span></div><div class="fld"><span class="fld-l">Launched</span><span class="fld-v">Org 2020; AI Specialist EAC designation 2026</span></div><div class="fld"><span class="fld-l">Audience</span><span class="fld-v">Non-technical owners, many immigrant-run legacy businesses; statewide mandate</span></div></div>
+        <div class="note"><span class="subfld-l">Positioning &amp; name</span><p>'AI on Main Street' reframes AI as a main-street tool, not a Silicon Valley one. Earned the mandate by using AI on its own operations first.</p></div>
+        </div>
+        <div class="pillar pillar-take">
+        <h4>Top 3 moves to borrow</h4>
+        <ul class="tick"><li>Map the workflow and name the pain point before anyone opens a laptop</li><li>Concrete ROI stories (a killed $150-200/month subscription) instead of generic literacy</li><li>Use your own AI wins as the teaching material</li></ul>
+        </div>
+        <div class="sources"><span class="subfld-l">Sources &middot; confidence: medium &#183; WtC&#x27;s teaching philosophy, formats, and case studies are well-documented from its own site and reputable NYC press; but the formal standardized AI curriculum for the 25+ EACs is announced and in development, with detailed modules/levels/pricing not yet published as of mid-2026. Funding amounts and timeline for the statewide curriculum are not disclosed.</span><div class="srcwrap"><a href="https://welcometochinatown.com/" target="_blank" rel="noopener">welcometochinatown.com</a><a href="https://welcometochinatown.com/news/ai-on-main-street-what-we-learned-hosting-ny-tech-week-2026" target="_blank" rel="noopener">welcometochinatown.com</a><a href="https://welcometochinatown.com/events/ai-on-main-street-how-chinatowns-small-businesses-are-using-ai-nytechweek" target="_blank" rel="noopener">welcometochinatown.com</a><a href="https://welcometochinatown.com/hub-vision" target="_blank" rel="noopener">welcometochinatown.com</a><a href="https://www.governor.ny.gov/news/governor-hochul-launches-futureworks-commission-guide-response-impacts-ai-workers-across-new" target="_blank" rel="noopener">www.governor.ny.gov</a><a href="https://esd.ny.gov/esd-media-center/press-releases/empire-state-development-announces-start-construction-welcome" target="_blank" rel="noopener">esd.ny.gov</a><a href="https://esd.ny.gov/entrepreneurship-assistance-centers" target="_blank" rel="noopener">esd.ny.gov</a><a href="https://esd.ny.gov/entrepreneurship-assistance-centers-program" target="_blank" rel="noopener">esd.ny.gov</a></div></div>
+        </div>
+    </details>
+
+    <details class="card" id="p-alabama-sbdc-ai-clinics-ai-u"
+        data-cat="sbdc" data-fmt="hybrid" data-price="free" data-status="active"
+        data-name="alabama sbdc &#183; ai clinics / ai-u" data-region="alabama (statewide; part of america&#x27;s sbdc national network of 63 sbdcs)">
+      <summary>
+        <div class="card-head">
+          <div class="card-title">
+            <h3>Alabama SBDC &#183; AI Clinics / AI-U</h3>
+            <div class="card-meta">Alabama <a class="ext" href="https://www.asbdc.org/aiu/" target="_blank" rel="noopener">visit&#8599;</a></div>
+          </div>
+          <div class="chips"><span class="chip cat">SBDC / University</span><span class="chip">Hybrid</span><span class="chip price free">Free</span><span class="chip status active">Active</span></div>
+        </div>
+        <p class="card-mission">Alabama's arm of the national AI-U program: no-cost foundational AI training plus 1:1 coaching for owners, delivered by trained advisors and campus AI Clinics.</p>
+        <span class="expand">Full profile <span class="chev">&#9662;</span></span>
+      </summary>
+      <div class="card-body">
+        <div class="pillar pillar-curric">
+        <h4><span class="pil-tag">Curriculum</span> How they teach owners</h4>
+        <div class="lvl1"><span class="lvl1-l">What Level&nbsp;1 looks like</span><p>An owner signs up or calls and is connected to a trained SBDC AI advisor: foundational 'what can AI do for my business' training, a first coaching conversation, and applied demos on everyday tasks.</p></div>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Structure</span><span class="fld-v">Two-sided: owner-facing workshops, clinics, and 1:1 coaching, with a five-module certified advisor curriculum underneath. After-hours and weekend sessions offered.</span></div><div class="fld"><span class="fld-l">Delivery</span><span class="fld-v">Hybrid: on-demand content plus in-person clinics</span></div><div class="fld"><span class="fld-l">Hands-on vs lecture</span><span class="fld-v">20+ hands-on prompting exercises built with real operators; clinics are student-delivered consultation.</span></div><div class="fld"><span class="fld-l">Price</span><span class="fld-v">Free to owners; grant-underwritten, and SBDC advising is no-cost by mandate</span></div></div>
+        <div class="subfld"><span class="subfld-l">Example topics</span><ul class="tags"><li>Automating customer service</li><li>Marketing content, images, video</li><li>Analyzing and visualizing data</li><li>No-code app building ('vibe coding')</li><li>Strategic planning</li></ul></div>
+        <div class="subfld"><span class="subfld-l">Teaching methods</span><ul class="tick"><li>Campus AI Clinics: students trained via Google AI Essentials give supervised hands-on help</li><li>1:1 coaching layered on top of group training</li><li>After-hours and weekend scheduling for working owners</li></ul></div>
+        </div>
+        <div class="pillar">
+        <h4>Events &amp; community</h4>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Cadence</span><span class="fld-v">Not published for Alabama specifically</span></div><div class="fld"><span class="fld-l">Format</span><span class="fld-v">Clinic or workshop plus individualized coaching</span></div><div class="fld"><span class="fld-l">Size</span><span class="fld-v">Unknown</span></div><div class="fld"><span class="fld-l">Community size</span><span class="fld-v">Alabama numbers not published; the national program targets 100,000+ clients</span></div></div>
+        <div class="note"><span class="subfld-l">Progression</span><p>Owner: training, coaching, ongoing advisor relationship. Advisor: five modules, Google AI Essentials, a full-day train-the-trainer, certification.</p></div>
+        <div class="note"><span class="subfld-l">How they grow</span><p>The existing SBDC advisor network plus campus clinics; students as force multipliers.</p></div>
+        </div>
+        <div class="pillar">
+        <h4>Model, brand &amp; funding</h4>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Entity</span><span class="fld-v">Government-affiliated SBDC program; state arm of America's SBDC</span></div><div class="fld"><span class="fld-l">Funding</span><span class="fld-v">The national $10M Google.org grant; SBA and host-university co-funded underneath</span></div><div class="fld"><span class="fld-l">Launched</span><span class="fld-v">2024</span></div><div class="fld"><span class="fld-l">Audience</span><span class="fld-v">Non-technical Alabama owners; students trained as clinic advisors</span></div></div>
+        <div class="note"><span class="subfld-l">Positioning &amp; name</span><p>Trusted, no-cost, government and university backed. Delivered by advisors and students, not vendors.</p></div>
+        </div>
+        <div class="pillar pillar-take">
+        <h4>Top 3 moves to borrow</h4>
+        <ul class="tick"><li>After-hours and weekend sessions as a cheap, concrete accommodation</li><li>Coaching after the workshop is what converts curiosity into adoption</li><li>A five-module spine: basics and privacy, marketing and sales, finance, operations, agents</li></ul>
+        </div>
+        <div class="sources"><span class="subfld-l">Sources &middot; confidence: medium</span><div class="srcwrap"><a href="https://www.asbdc.org/aiu/" target="_blank" rel="noopener">www.asbdc.org</a><a href="https://www.americassbdc-ai-u.org/" target="_blank" rel="noopener">www.americassbdc-ai-u.org</a><a href="https://lms.americassbdc.org/certification" target="_blank" rel="noopener">lms.americassbdc.org</a><a href="https://americassbdc.org/why-ai-training-is-the-new-competitive-standard-for-small-business/" target="_blank" rel="noopener">americassbdc.org</a><a href="https://blog.google/outreach-initiatives/google-org/google-ai-training-funding-small-businesses/" target="_blank" rel="noopener">blog.google</a><a href="https://delawaresbdc.org/elementor-45278/" target="_blank" rel="noopener">delawaresbdc.org</a><a href="https://blogs.und.edu/press-releases/2024/10/google-announces-10m-grant-to-americas-small-business-development-centers-for-ai-training/" target="_blank" rel="noopener">blogs.und.edu</a></div></div>
+        </div>
+    </details>
+
+    <details class="card" id="p-america-s-sbdc-ai-u-ai-clinics"
+        data-cat="sbdc" data-fmt="selfserve" data-price="free" data-status="active"
+        data-name="america&#x27;s sbdc &#183; ai u / ai clinics" data-region="national (all 63 sbdc networks across the us, ~1,000 local centers, often hosted at universities/community colleges)">
+      <summary>
+        <div class="card-head">
+          <div class="card-title">
+            <h3>America&#x27;s SBDC &#183; AI U / AI Clinics</h3>
+            <div class="card-meta">National <a class="ext" href="https://www.americassbdc-ai-u.org/" target="_blank" rel="noopener">visit&#8599;</a></div>
+          </div>
+          <div class="chips"><span class="chip cat">SBDC / University</span><span class="chip">Self-serve</span><span class="chip price free">Free</span><span class="chip status active">Active</span></div>
+        </div>
+        <p class="card-mission">National train-the-trainer program: equip SBDC advisors with practical AI knowledge, then reach owners through 1:1 coaching, workshops, and student-run AI Clinics. Goal: 100,000 small businesses.</p>
+        <span class="expand">Full profile <span class="chev">&#9662;</span></span>
+      </summary>
+      <div class="card-body">
+        <div class="pillar pillar-curric">
+        <h4><span class="pil-tag">Curriculum</span> How they teach owners</h4>
+        <div class="lvl1"><span class="lvl1-l">What Level&nbsp;1 looks like</span><p>For an owner, entry is a free 1:1 session with a trained local advisor. For advisors, a 15-minute orientation, then Module 1: AI Basics for Business Advising.</p></div>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Structure</span><span class="fld-v">Five self-paced advisor modules on an LMS, refreshed annually by a curriculum committee, plus Google AI Essentials and in-person certification at the national conference. Owners get coaching, workshops, clinics, and the free Google AI Professional Certificate.</span></div><div class="fld"><span class="fld-l">Delivery</span><span class="fld-v">Hybrid: self-paced modules, live sessions, campus clinics</span></div><div class="fld"><span class="fld-l">Hands-on vs lecture</span><span class="fld-v">Applied: case studies, demos, 20+ prompting exercises. AI Clinics are direct hands-on implementation help.</span></div><div class="fld"><span class="fld-l">Price</span><span class="fld-v">$0, underwritten by a $10M Google.org grant</span></div></div>
+        <div class="subfld"><span class="subfld-l">Example topics</span><ul class="tags"><li>AI basics for business advising, incl. data privacy</li><li>Marketing and sales with AI</li><li>AI strategy for small-business finance</li><li>Business operations optimization</li><li>Demystifying AI agents</li></ul></div>
+        <div class="subfld"><span class="subfld-l">Teaching methods</span><ul class="tick"><li>AI Clinics: trained students give owners free hands-on help, modeled on law and medical school clinics</li><li>Train-the-trainer: build advisor capacity first, then advisors coach owners in plain language</li><li>Fold in an existing free credential (Google AI Professional Certificate) instead of rebuilding one</li></ul></div>
+        </div>
+        <div class="pillar">
+        <h4>Events &amp; community</h4>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Cadence</span><span class="fld-v">Ongoing self-paced; periodic live sessions; annual conference certification</span></div><div class="fld"><span class="fld-l">Format</span><span class="fld-v">Self-paced modules, live virtual sessions, in-person clinics</span></div><div class="fld"><span class="fld-l">Size</span><span class="fld-v">Not specified</span></div><div class="fld"><span class="fld-l">Community size</span><span class="fld-v">2,174+ staff trained, 1,021+ more via peer transfer, 8,000+ businesses coached; 63 networks, ~1,000 centers</span></div></div>
+        <div class="note"><span class="subfld-l">Progression</span><p>Advisors: modules, Essentials, certification, then client coaching. Owners: awareness, 1:1 coaching, optional certificate, implementation.</p></div>
+        <div class="note"><span class="subfld-l">How they grow</span><p>Federated through existing university-hosted centers; students form a renewable clinic pipeline.</p></div>
+        </div>
+        <div class="pillar">
+        <h4>Model, brand &amp; funding</h4>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Entity</span><span class="fld-v">SBA-affiliated national nonprofit network initiative</span></div><div class="fld"><span class="fld-l">Funding</span><span class="fld-v">A $10M Google.org grant on top of permanent SBA, university, and state co-funding</span></div><div class="fld"><span class="fld-l">Launched</span><span class="fld-v">2024</span></div><div class="fld"><span class="fld-l">Audience</span><span class="fld-v">Owners, reached indirectly through trained advisors and student clinics</span></div></div>
+        <div class="note"><span class="subfld-l">Positioning &amp; name</span><p>'AI U' signals a university-style curriculum; 'AI Clinics' borrows the trusted service-learning clinic metaphor.</p></div>
+        </div>
+        <div class="pillar pillar-take">
+        <h4>Top 3 moves to borrow</h4>
+        <ul class="tick"><li>Student-staffed AI Clinics as a renewable, low-cost hands-on help pipeline</li><li>Train a small cadre of local coaches before scaling to owners</li><li>Point owners at existing free credentials and spend local energy on coaching and community</li></ul>
+        </div>
+        <div class="sources"><span class="subfld-l">Sources &middot; confidence: medium</span><div class="srcwrap"><a href="https://www.americassbdc-ai-u.org/" target="_blank" rel="noopener">www.americassbdc-ai-u.org</a><a href="https://lms.americassbdc.org/about" target="_blank" rel="noopener">lms.americassbdc.org</a><a href="https://lms.americassbdc.org/course/ai-courses-tour" target="_blank" rel="noopener">lms.americassbdc.org</a><a href="https://americassbdc.org/why-ai-training-is-the-new-competitive-standard-for-small-business/" target="_blank" rel="noopener">americassbdc.org</a><a href="https://blog.google/outreach-initiatives/google-org/google-ai-training-funding-small-businesses/" target="_blank" rel="noopener">blog.google</a><a href="https://www.asbdc.org/aiu/" target="_blank" rel="noopener">www.asbdc.org</a><a href="https://delawaresbdc.org/elementor-45278/" target="_blank" rel="noopener">delawaresbdc.org</a><a href="https://www.minnesota.edu/news/sbdcs-ian-carlstrom-serving-national-ai-curriculum-committee" target="_blank" rel="noopener">www.minnesota.edu</a></div></div>
+        </div>
+    </details>
+
+    <details class="card" id="p-florida-sbdc-at-unf-ai-institute"
+        data-cat="sbdc" data-fmt="cohort" data-price="free" data-status="active"
+        data-name="florida sbdc at unf &#183; ai institute" data-region="jacksonville / north florida (florida)">
+      <summary>
+        <div class="card-head">
+          <div class="card-title">
+            <h3>Florida SBDC at UNF &#183; AI Institute</h3>
+            <div class="card-meta">Jacksonville / North Florida <a class="ext" href="https://www.unf.edu/sbdc/AI-Institute.html" target="_blank" rel="noopener">visit&#8599;</a></div>
+          </div>
+          <div class="chips"><span class="chip cat">SBDC / University</span><span class="chip">Cohort</span><span class="chip price free">Free</span><span class="chip status active">Active</span></div>
+        </div>
+        <p class="card-mission">The AI arm of a university-hosted SBDC serving small businesses since 1976. Stated principle: participants don't just study AI; they build, test, and apply it inside their existing operations.</p>
+        <span class="expand">Full profile <span class="chev">&#9662;</span></span>
+      </summary>
+      <div class="card-body">
+        <div class="pillar pillar-curric">
+        <h4><span class="pil-tag">Curriculum</span> How they teach owners</h4>
+        <div class="lvl1"><span class="lvl1-l">What Level&nbsp;1 looks like</span><p>The entry bootcamp is a formal introduction to AI for a growing business: four weekly 2-hour sessions where facilitators guide owners to build, test, and apply tools in their own workflows.</p></div>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Structure</span><span class="fld-v">An Interactive Training Series run as 4-week bootcamps, one 2-hour class per week.</span></div><div class="fld"><span class="fld-l">Delivery</span><span class="fld-v">Weekly live classes; modality not stated</span></div><div class="fld"><span class="fld-l">Hands-on vs lecture</span><span class="fld-v">Applied by principle: tools woven into existing business models, tangible results over abstract concepts.</span></div><div class="fld"><span class="fld-l">Price</span><span class="fld-v">Not published; a sibling Florida SBDC AI series ran free via an econ-dev partnership</span></div></div>
+        <div class="subfld"><span class="subfld-l">Example topics</span><ul class="tags"><li>AI foundations for a growing business</li><li>Streamlining everyday workflows</li><li>Meeting regulatory and operational standards</li><li>Immediate, measurable efficiency gains</li></ul></div>
+        <div class="subfld"><span class="subfld-l">Teaching methods</span><ul class="tick"><li>Owners build in their own business during the cohort, not in sandbox exercises</li><li>Facilitators pair business strategy with applied AI; not pure technologists</li><li>Every session tied to an immediate, measurable outcome</li></ul></div>
+        </div>
+        <div class="pillar">
+        <h4>Events &amp; community</h4>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Cadence</span><span class="fld-v">Recurring 4-week series; cohort frequency not published</span></div><div class="fld"><span class="fld-l">Format</span><span class="fld-v">Structured cohort: a 2-hour hands-on class per week for 4 weeks</span></div><div class="fld"><span class="fld-l">Size</span><span class="fld-v">Not published</span></div><div class="fld"><span class="fld-l">Community size</span><span class="fld-v">Not published</span></div></div>
+        <div class="note"><span class="subfld-l">Progression</span><p>Intro bootcamp, then no-cost SBDC 1:1 consulting and other growth programs.</p></div>
+        <div class="note"><span class="subfld-l">How they grow</span><p>Feeds from the existing SBDC client base; attendees route into consulting.</p></div>
+        </div>
+        <div class="pillar">
+        <h4>Model, brand &amp; funding</h4>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Entity</span><span class="fld-v">University-hosted SBDC program (UNF; Florida SBDC Network)</span></div><div class="fld"><span class="fld-l">Funding</span><span class="fld-v">SBA, Department of Defense, State of Florida, and partners; core consulting is no-cost</span></div><div class="fld"><span class="fld-l">Launched</span><span class="fld-v">Not published</span></div><div class="fld"><span class="fld-l">Audience</span><span class="fld-v">Non-technical owners and operators; deliberately distinct from UNF's technical bootcamps</span></div></div>
+        <div class="note"><span class="subfld-l">Positioning &amp; name</span><p>Tagline: 'Simplifying AI for Small Business.' University and government credibility with an anti-theory stance.</p></div>
+        </div>
+        <div class="pillar pillar-take">
+        <h4>Top 3 moves to borrow</h4>
+        <ul class="tick"><li>A 4-week x 2-hour cohort: long enough to build skill, short enough to finish</li><li>An apply-to-your-own-business requirement in every session</li><li>Teachers who speak owner, not engineer</li></ul>
+        </div>
+        <div class="sources"><span class="subfld-l">Sources &middot; confidence: medium</span><div class="srcwrap"><a href="https://www.unf.edu/sbdc/AI-Institute.html" target="_blank" rel="noopener">www.unf.edu</a><a href="https://www.unf.edu/sbdc/training-and-events.html" target="_blank" rel="noopener">www.unf.edu</a><a href="https://floridasbdc.org/find/unf/" target="_blank" rel="noopener">floridasbdc.org</a><a href="https://www.unf.edu/sbdc/index.html" target="_blank" rel="noopener">www.unf.edu</a><a href="https://cleared4takeoff.com/ai-for-small-business-3-game-changing-lessons-from-the-sbdc-series/" target="_blank" rel="noopener">cleared4takeoff.com</a><a href="https://events.blackthorn.io/en/6g3Q8Wa7/?keywords=Florida%20SBDC%20at%20UNF,Artificial%20Intelligence%20(A.I.)" target="_blank" rel="noopener">events.blackthorn.io</a><a href="https://www.unf.edu/newsroom/2025/09/AI-for-Work-and-Life-Certificate.html" target="_blank" rel="noopener">www.unf.edu</a><a href="https://bootcamp.unf.edu/programs/ai-machine-learning" target="_blank" rel="noopener">bootcamp.unf.edu</a></div></div>
+        </div>
+    </details>
+
+    <details class="card" id="p-uga-sbdc-at-valdosta-state-solving-your-business-problems-with-ai"
+        data-cat="sbdc" data-fmt="events" data-price="free" data-status="active"
+        data-name="uga sbdc at valdosta state &#183; &quot;solving your business problems with ai&quot;" data-region="south georgia (valdosta / tifton / douglas region); part of the statewide uga sbdc network hosted at valdosta state university">
+      <summary>
+        <div class="card-head">
+          <div class="card-title">
+            <h3>UGA SBDC at Valdosta State &#183; &quot;Solving Your Business Problems with AI&quot;</h3>
+            <div class="card-meta">South Georgia <a class="ext" href="https://georgiasbdc.org/training-program/0840-002-vsu-solving-your-business-problems-with-ai/" target="_blank" rel="noopener">visit&#8599;</a></div>
+          </div>
+          <div class="chips"><span class="chip cat">SBDC / University</span><span class="chip">Events-only</span><span class="chip price free">Free</span><span class="chip status active">Active</span></div>
+        </div>
+        <p class="card-mission">A free, repeatable 2-hour workshop that takes owners past the AI hype: the types of AI in plain language, a framework for spotting value, and next steps to try that week.</p>
+        <span class="expand">Full profile <span class="chev">&#9662;</span></span>
+      </summary>
+      <div class="card-body">
+        <div class="pillar pillar-curric">
+        <h4><span class="pil-tag">Curriculum</span> How they teach owners</h4>
+        <div class="lvl1"><span class="lvl1-l">What Level&nbsp;1 looks like</span><p>An owner walks into a chamber office or event center for a free 2-hour daytime session: plain-language AI types, a framework for spotting value in their own operations, a local case study, and do-it-this-week next steps.</p></div>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Structure</span><span class="fld-v">A single ~2-hour standalone workshop, repeated town to town across South Georgia. No levels or modules.</span></div><div class="fld"><span class="fld-l">Delivery</span><span class="fld-v">In-person</span></div><div class="fld"><span class="fld-l">Hands-on vs lecture</span><span class="fld-v">Lecture-plus-framework with a case study. Owners get a mental model and next steps, not live building.</span></div><div class="fld"><span class="fld-l">Price</span><span class="fld-v">$0</span></div></div>
+        <div class="subfld"><span class="subfld-l">Example topics</span><ul class="tags"><li>The main types of AI in plain language</li><li>A framework for spotting where AI creates value</li><li>From one-off prompts to a repeatable strategy</li><li>Connecting tools into an integrated system</li></ul></div>
+        <div class="subfld"><span class="subfld-l">Teaching methods</span><ul class="tick"><li>Plain-language AI literacy before any tool talk</li><li>A reusable value-spotting framework instead of a tool list</li><li>A local case study (rural Georgia agriculture) owners recognize</li></ul></div>
+        </div>
+        <div class="pillar">
+        <h4>Events &amp; community</h4>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Cadence</span><span class="fld-v">Repeated across towns; e.g. Tifton and Douglas on back-to-back days, July 2026</span></div><div class="fld"><span class="fld-l">Format</span><span class="fld-v">~2-hour daytime workshop at a local venue</span></div><div class="fld"><span class="fld-l">Size</span><span class="fld-v">Community-venue scale</span></div><div class="fld"><span class="fld-l">Community size</span><span class="fld-v">Not a standing community; the parent AI-U program reports 8,000+ businesses coached nationally</span></div></div>
+        <div class="note"><span class="subfld-l">Progression</span><p>Attendee, next steps tried that week, then free ongoing 1:1 SBDC advising.</p></div>
+        <div class="note"><span class="subfld-l">How they grow</span><p>Advisor referrals, chamber partnerships, SBA event promotion.</p></div>
+        </div>
+        <div class="pillar">
+        <h4>Model, brand &amp; funding</h4>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Entity</span><span class="fld-v">Government-affiliated SBDC workshop program (UGA SBDC at Valdosta State)</span></div><div class="fld"><span class="fld-l">Funding</span><span class="fld-v">SBA, University of Georgia, and state funding; free to attend</span></div><div class="fld"><span class="fld-l">Launched</span><span class="fld-v">2025</span></div><div class="fld"><span class="fld-l">Audience</span><span class="fld-v">Non-technical South Georgia owners, cross-industry</span></div></div>
+        <div class="note"><span class="subfld-l">Positioning &amp; name</span><p>A problem-first name that centers the owner's business problem, not the AI. 'Past the hype,' government-backed, free.</p></div>
+        </div>
+        <div class="pillar pillar-take">
+        <h4>Top 3 moves to borrow</h4>
+        <ul class="tick"><li>Problem-first session naming that centers the owner's pain</li><li>An explicit do-it-this-week close on every session</li><li>Free community venues, repeated town to town, for rural reach</li></ul>
+        </div>
+        <div class="sources"><span class="subfld-l">Sources &middot; confidence: high</span><div class="srcwrap"><a href="https://georgiasbdc.org/training-program/0840-002-vsu-solving-your-business-problems-with-ai/" target="_blank" rel="noopener">georgiasbdc.org</a><a href="https://georgiasbdc.org/training-program/0840-001-vsu-solving-your-business-problems-with-ai/" target="_blank" rel="noopener">georgiasbdc.org</a><a href="https://www.sba.gov/event/85249" target="_blank" rel="noopener">www.sba.gov</a><a href="https://legacy.sba.gov/event/85249" target="_blank" rel="noopener">legacy.sba.gov</a><a href="https://www.americassbdc-ai-u.org/" target="_blank" rel="noopener">www.americassbdc-ai-u.org</a><a href="https://americassbdc.org/why-ai-training-is-the-new-competitive-standard-for-small-business/" target="_blank" rel="noopener">americassbdc.org</a><a href="https://blog.google/outreach-initiatives/google-org/google-ai-training-funding-small-businesses/" target="_blank" rel="noopener">blog.google</a></div></div>
+        </div>
+    </details>
+
+    <details class="card" id="p-wisconsin-sbdc-southwestern-wisconsin-rpc-ai-for-small-business"
+        data-cat="sbdc" data-fmt="cohort" data-price="free" data-status="active"
+        data-name="wisconsin sbdc + southwestern wisconsin rpc &#183; &quot;ai for small business&quot;" data-region="southwest wisconsin &#183; 5 rural counties: grant, green, iowa, lafayette, richland (the &quot;driftless&quot; region)">
+      <summary>
+        <div class="card-head">
+          <div class="card-title">
+            <h3>Wisconsin SBDC + Southwestern Wisconsin RPC &#183; &quot;AI for Small Business&quot;</h3>
+            <div class="card-meta">Southwest Wisconsin <a class="ext" href="https://rise-above.net/ai101" target="_blank" rel="noopener">visit&#8599;</a></div>
+          </div>
+          <div class="chips"><span class="chip cat">SBDC / University</span><span class="chip">Cohort</span><span class="chip price free">Free</span><span class="chip status active">Active</span></div>
+        </div>
+        <p class="card-mission">A USDA-grant-funded series giving rural owners in five Driftless-region counties the skills and confidence to evaluate and adopt AI on their own, without becoming technologists.</p>
+        <span class="expand">Full profile <span class="chev">&#9662;</span></span>
+      </summary>
+      <div class="card-body">
+        <div class="pillar pillar-curric">
+        <h4><span class="pil-tag">Curriculum</span> How they teach owners</h4>
+        <div class="lvl1"><span class="lvl1-l">What Level&nbsp;1 looks like</span><p>The 101 'AI Essentials' workshop, 2 to 3 hours, beginner-explicit: what AI tools can and can't do, where they genuinely help, the real risks, plus live prompting practice on your own laptop.</p></div>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Structure</span><span class="fld-v">Leveled 101 (Essentials) and 201 (Implementation) series inside a three-tier model: regional workshops, small-group sessions, optional 1:1 coaching.</span></div><div class="fld"><span class="fld-l">Delivery</span><span class="fld-v">Mostly in-person across five counties, plus one Zoom session</span></div><div class="fld"><span class="fld-l">Hands-on vs lecture</span><span class="fld-v">Bring your own laptop and practice live. Tool-agnostic: judgment over any single platform.</span></div><div class="fld"><span class="fld-l">Price</span><span class="fld-v">Free (grant-funded)</span></div></div>
+        <div class="subfld"><span class="subfld-l">Example topics</span><ul class="tags"><li>What AI can and can't do</li><li>Prompting and research</li><li>Marketing and content</li><li>Customer email drafting</li><li>Admin workflow automation</li><li>Inventory and cost tracking</li></ul></div>
+        <div class="subfld"><span class="subfld-l">Teaching methods</span><ul class="tick"><li>A 'See It / Build It' progression: demo real business tasks, then owners build their own toolkit</li><li>Tool-agnostic, concept-first teaching that survives tool churn</li><li>Spanish-language sessions in Monroe and Darlington</li></ul></div>
+        </div>
+        <div class="pillar">
+        <h4>Events &amp; community</h4>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Cadence</span><span class="fld-v">Six-plus sessions across five counties, July into late August 2026, with 201 following</span></div><div class="fld"><span class="fld-l">Format</span><span class="fld-v">Free ~3-hour hands-on workshops at community centers and county buildings</span></div><div class="fld"><span class="fld-l">Size</span><span class="fld-v">Small; limited seating per session</span></div><div class="fld"><span class="fld-l">Community size</span><span class="fld-v">Cohort scale; no membership count published</span></div></div>
+        <div class="note"><span class="subfld-l">Progression</span><p>Free 101, then 201 implementation, then optional 1:1 coaching on the owner's own business.</p></div>
+        <div class="note"><span class="subfld-l">How they grow</span><p>Planning-commission and SBDC outreach, county partners, rural news coverage.</p></div>
+        </div>
+        <div class="pillar">
+        <h4>Model, brand &amp; funding</h4>
+        <div class="fldgrid"><div class="fld"><span class="fld-l">Entity</span><span class="fld-v">Regional planning commission plus state SBDC; taught by a private consultant (Rise Above Partners)</span></div><div class="fld"><span class="fld-l">Funding</span><span class="fld-v">A $68,493 USDA Rural Business Development Grant; free to participants</span></div><div class="fld"><span class="fld-l">Launched</span><span class="fld-v">2026</span></div><div class="fld"><span class="fld-l">Audience</span><span class="fld-v">Non-technical rural owners, operators, and freelancers; no prerequisites</span></div></div>
+        <div class="note"><span class="subfld-l">Positioning &amp; name</span><p>A plain name with familiar 101/201 numbering so beginners know where to start. Rooted in rural regional identity, delivered through trusted local institutions.</p></div>
+        </div>
+        <div class="pillar pillar-take">
+        <h4>Top 3 moves to borrow</h4>
+        <ul class="tick"><li>A modest grant ($68K) fully underwrote a multi-county free series</li><li>A clean ladder: 101, then 201, then 1:1 coaching</li><li>Community centers and county buildings instead of one central hub</li></ul>
+        </div>
+        <div class="sources"><span class="subfld-l">Sources &middot; confidence: medium</span><div class="srcwrap"><a href="https://wrco.com/news/2026/07/11/small-business-owners-across-southwest-wisconsin-can-get-free-training-on-generative-artificial-intelligence" target="_blank" rel="noopener">wrco.com</a><a href="https://themonroetimes.com/community/free-ai-training-for-small-businesses-comes-to-five-sw-wis-counties-this-summer/" target="_blank" rel="noopener">themonroetimes.com</a><a href="https://vernonreporter.com/free-ai-training-program-brings-practical-business-skills-to-southwest-wisconsin/" target="_blank" rel="noopener">vernonreporter.com</a><a href="https://vernonreporter.com/two-part-workshop-offers-small-business-owners-tools-to-save-time-and-reduce-workload/" target="_blank" rel="noopener">vernonreporter.com</a><a href="https://rise-above.net/ai101" target="_blank" rel="noopener">rise-above.net</a><a href="https://rise-above.net/ai-workshop" target="_blank" rel="noopener">rise-above.net</a><a href="https://rise-above.net/ai-tools" target="_blank" rel="noopener">rise-above.net</a><a href="https://businessentrepreneurship.zohobackstage.com/AI101ForSmallBusinessPlatteville" target="_blank" rel="noopener">businessentrepreneurship.zohobackstage.com</a></div></div>
+        </div>
+    </details>
+    </div>
+
+    <div class="tablewrap hidden" id="tablewrap">
+      <table>
+        <thead><tr><th>Initiative</th><th>Region</th><th>Category</th><th>Format</th><th>Price</th><th>Event cadence</th></tr></thead>
+        <tbody id="tbody"><tr data-cat="chamber" data-fmt="cohort" data-price="free"
+        data-name="bronx chamber of commerce foundation &#183; ai advantage program" data-region="bronx, new york city, new york">
+      <td class="c-name"><a href="#p-bronx-chamber-of-commerce-foundation-ai-advantage-program">Bronx Chamber of Commerce Foundation &#183; AI Advantage Program</a></td>
+      <td class="c-region">Bronx, New York City, New York</td>
+      <td><span class="chip cat">Chamber / Econ-dev</span></td>
+      <td>Cohort</td>
+      <td><span class="chip price free">Free</span></td>
+      <td class="c-cad">Weekly sessions over a four-week cohort; cohorts run sequentially (three so far: winter 2026, a second underway, a third starting March 2026)</td>
+    </tr>
+<tr data-cat="chamber" data-fmt="cohort" data-price="free"
+        data-name="manhattan chamber of commerce &#183; tech to table" data-region="new york city (manhattan), new york">
+      <td class="c-name"><a href="#p-manhattan-chamber-of-commerce-tech-to-table">Manhattan Chamber of Commerce &#183; Tech to Table</a></td>
+      <td class="c-region">New York City</td>
+      <td><span class="chip cat">Chamber / Econ-dev</span></td>
+      <td>Cohort</td>
+      <td><span class="chip price free">Free</span></td>
+      <td class="c-cad">Weekly sessions across a six-week cohort</td>
+    </tr>
+<tr data-cat="chamber" data-fmt="cohort" data-price="free"
+        data-name="southern georgia black chambers &#183; small business academy (ai integration track)" data-region="valdosta, georgia &#183; serving a 19-county southern georgia region">
+      <td class="c-name"><a href="#p-southern-georgia-black-chambers-small-business-academy-ai-integration-track">Southern Georgia Black Chambers &#183; Small Business Academy (AI Integration track)</a></td>
+      <td class="c-region">Valdosta, Georgia</td>
+      <td><span class="chip cat">Chamber / Econ-dev</span></td>
+      <td>Cohort</td>
+      <td><span class="chip price free">Free</span></td>
+      <td class="c-cad">2026 Academy runs as a sequenced 11-session residency (kickoff Feb 24, AI session ~April 7); precursor one-off AI workshop in Sept 2025</td>
+    </tr>
+<tr data-cat="forprofit" data-fmt="selfserve" data-price="free"
+        data-name="artificial intelligence for business group (julia fu / ai leadership frontier institute)" data-region="multi-city us meetup network, all events online via zoom. named chapters include austin tx, atlanta ga, new york ny, washington dc, columbus oh, oakland ca, san francisco ca, irvine ca, phoenix az.">
+      <td class="c-name"><a href="#p-artificial-intelligence-for-business-group-julia-fu-ai-leadership-frontier-institute">Artificial Intelligence for Business Group (Julia Fu / AI Leadership Frontier Institute)</a></td>
+      <td class="c-region">Multi-city US Meetup network, all events o</td>
+      <td><span class="chip cat">For-profit / Cohort</span></td>
+      <td>Self-serve</td>
+      <td><span class="chip price free">Free</span></td>
+      <td class="c-cad">Roughly monthly per chapter (e.g. Austin ~63 past events); frequent across the network as the same session recurs city to city</td>
+    </tr>
+<tr data-cat="forprofit" data-fmt="cohort" data-price="paid"
+        data-name="brazoria tech lab (ai prep initiative)" data-region="brazoria county, gulf coast texas (angleton / lake jackson area)">
+      <td class="c-name"><a href="#p-brazoria-tech-lab-ai-prep-initiative">Brazoria Tech Lab (AI Prep Initiative)</a></td>
+      <td class="c-region">Brazoria County, Gulf Coast Texas</td>
+      <td><span class="chip cat">For-profit / Cohort</span></td>
+      <td>Cohort</td>
+      <td><span class="chip price paid">Paid</span></td>
+      <td class="c-cad">Cohort-based; Cohort I = four consecutive Saturdays starting July 10</td>
+    </tr>
+<tr data-cat="forprofit" data-fmt="hybrid" data-price="paid"
+        data-name="charlotte ai (artificial intelligence) learning circle" data-region="charlotte, north carolina (metro spans into fort mill, sc)">
+      <td class="c-name"><a href="#p-charlotte-ai-artificial-intelligence-learning-circle">Charlotte AI (Artificial Intelligence) Learning Circle</a></td>
+      <td class="c-region">Charlotte, North Carolina</td>
+      <td><span class="chip cat">For-profit / Cohort</span></td>
+      <td>Hybrid</td>
+      <td><span class="chip price paid">Paid</span></td>
+      <td class="c-cad">unknown/irregular &#183; roughly four past events documented at time of research</td>
+    </tr>
+<tr data-cat="forprofit" data-fmt="events" data-price="free"
+        data-name="memphis ai meetup (weaddbots)" data-region="memphis metro, tennessee (incl. germantown, collierville, east memphis, midtown, downtown, olive branch ms)">
+      <td class="c-name"><a href="#p-memphis-ai-meetup-weaddbots">Memphis AI Meetup (WeAddBots)</a></td>
+      <td class="c-region">Memphis metro, Tennessee</td>
+      <td><span class="chip cat">For-profit / Cohort</span></td>
+      <td>Events-only</td>
+      <td><span class="chip price free">Free</span></td>
+      <td class="c-cad">Weekly, on rotating days/times (confirmed Tuesdays and Thursdays in the Aug&#8211;Oct 2026 window)</td>
+    </tr>
+<tr data-cat="forprofit" data-fmt="other" data-price="unknown"
+        data-name="ownerrx" data-region="national (us); founder/operator based in washington, dc">
+      <td class="c-name"><a href="#p-ownerrx">OwnerRx</a></td>
+      <td class="c-region">National</td>
+      <td><span class="chip cat">For-profit / Cohort</span></td>
+      <td>&#183;</td>
+      <td></td>
+      <td class="c-cad">&#183;</td>
+    </tr>
+<tr data-cat="community" data-fmt="selfserve" data-price="free"
+        data-name="ai fluency for small businesses (anthropic)" data-region="national / global (us-based, distributed via paypal merchant network and nonprofit partners)">
+      <td class="c-name"><a href="#p-ai-fluency-for-small-businesses-anthropic">AI Fluency for Small Businesses (Anthropic)</a></td>
+      <td class="c-region">National / global</td>
+      <td><span class="chip cat">Grassroots / Meetup</span></td>
+      <td>Self-serve</td>
+      <td><span class="chip price free">Free</span></td>
+      <td class="c-cad">Not specified</td>
+    </tr>
+<tr data-cat="community" data-fmt="events" data-price="paid"
+        data-name="applied ai for busy pros &amp; small biz" data-region="tampa, florida (tampa bay)">
+      <td class="c-name"><a href="#p-applied-ai-for-busy-pros-small-biz">Applied AI for Busy Pros &amp; Small Biz</a></td>
+      <td class="c-region">Tampa, Florida</td>
+      <td><span class="chip cat">Grassroots / Meetup</span></td>
+      <td>Events-only</td>
+      <td><span class="chip price paid">Paid</span></td>
+      <td class="c-cad">Irregular / unproven. Only one event documented (Oct 2025); no upcoming events listed at time of research.</td>
+    </tr>
+<tr data-cat="community" data-fmt="hybrid" data-price="paid"
+        data-name="main street ai collective" data-region="austin, texas (in-person) + online workshops">
+      <td class="c-name"><a href="#p-main-street-ai-collective">Main Street AI Collective</a></td>
+      <td class="c-region">Austin, Texas</td>
+      <td><span class="chip cat">Grassroots / Meetup</span></td>
+      <td>Hybrid</td>
+      <td><span class="chip price paid">Paid</span></td>
+      <td class="c-cad">&#183;</td>
+    </tr>
+<tr data-cat="nonprofit" data-fmt="events" data-price="free"
+        data-name="florida ai association (flaia)" data-region="orlando, florida (milk district) &#183; brands itself statewide as &quot;florida&quot;">
+      <td class="c-name"><a href="#p-florida-ai-association-flaia">Florida AI Association (FLAIA)</a></td>
+      <td class="c-region">Orlando, Florida</td>
+      <td><span class="chip cat">Nonprofit / Assoc.</span></td>
+      <td>Events-only</td>
+      <td><span class="chip price free">Free</span></td>
+      <td class="c-cad">Monthly (Tuesdays, 5:30 PM) &#183; instances observed Feb, Mar, Apr, May</td>
+    </tr>
+<tr data-cat="nonprofit" data-fmt="hybrid" data-price="free"
+        data-name="small business b(ai)sics" data-region="national (united states); delivered locally through 1,500+ state and local chambers of commerce">
+      <td class="c-name"><a href="#p-small-business-b-ai-sics">Small Business B(AI)sics</a></td>
+      <td class="c-region">National</td>
+      <td><span class="chip cat">Nonprofit / Assoc.</span></td>
+      <td>Hybrid</td>
+      <td><span class="chip price free">Free</span></td>
+      <td class="c-cad">Ongoing, rolling; specific workshop schedules set locally by participating chambers</td>
+    </tr>
+<tr data-cat="nonprofit" data-fmt="cohort" data-price="paid"
+        data-name="welcome to chinatown &#183; ny state ai specialist eac / ai training hub" data-region="new york state (based in manhattan&#x27;s chinatown; statewide mandate across 25+ eacs)">
+      <td class="c-name"><a href="#p-welcome-to-chinatown-ny-state-ai-specialist-eac-ai-training-hub">Welcome to Chinatown &#183; NY State AI Specialist EAC / AI Training Hub</a></td>
+      <td class="c-region">New York State</td>
+      <td><span class="chip cat">Nonprofit / Assoc.</span></td>
+      <td>Cohort</td>
+      <td><span class="chip price paid">Paid</span></td>
+      <td class="c-cad">Ad hoc / emerging; tied to programming at the 115 Bowery Hub (opened ~Fall 2024)</td>
+    </tr>
+<tr data-cat="sbdc" data-fmt="hybrid" data-price="free"
+        data-name="alabama sbdc &#183; ai clinics / ai-u" data-region="alabama (statewide; part of america&#x27;s sbdc national network of 63 sbdcs)">
+      <td class="c-name"><a href="#p-alabama-sbdc-ai-clinics-ai-u">Alabama SBDC &#183; AI Clinics / AI-U</a></td>
+      <td class="c-region">Alabama</td>
+      <td><span class="chip cat">SBDC / University</span></td>
+      <td>Hybrid</td>
+      <td><span class="chip price free">Free</span></td>
+      <td class="c-cad">Not published for Alabama specifically</td>
+    </tr>
+<tr data-cat="sbdc" data-fmt="selfserve" data-price="free"
+        data-name="america&#x27;s sbdc &#183; ai u / ai clinics" data-region="national (all 63 sbdc networks across the us, ~1,000 local centers, often hosted at universities/community colleges)">
+      <td class="c-name"><a href="#p-america-s-sbdc-ai-u-ai-clinics">America&#x27;s SBDC &#183; AI U / AI Clinics</a></td>
+      <td class="c-region">National</td>
+      <td><span class="chip cat">SBDC / University</span></td>
+      <td>Self-serve</td>
+      <td><span class="chip price free">Free</span></td>
+      <td class="c-cad">Ongoing self-paced learning; live sessions periodic; national certification at the yearly conference; curriculum reviewed/refreshed annually</td>
+    </tr>
+<tr data-cat="sbdc" data-fmt="cohort" data-price="free"
+        data-name="florida sbdc at unf &#183; ai institute" data-region="jacksonville / north florida (florida)">
+      <td class="c-name"><a href="#p-florida-sbdc-at-unf-ai-institute">Florida SBDC at UNF &#183; AI Institute</a></td>
+      <td class="c-region">Jacksonville / North Florida</td>
+      <td><span class="chip cat">SBDC / University</span></td>
+      <td>Cohort</td>
+      <td><span class="chip price free">Free</span></td>
+      <td class="c-cad">Recurring bootcamp series (each series = 4 consecutive weeks); exact frequency of new cohorts not published</td>
+    </tr>
+<tr data-cat="sbdc" data-fmt="events" data-price="free"
+        data-name="uga sbdc at valdosta state &#183; &quot;solving your business problems with ai&quot;" data-region="south georgia (valdosta / tifton / douglas region); part of the statewide uga sbdc network hosted at valdosta state university">
+      <td class="c-name"><a href="#p-uga-sbdc-at-valdosta-state-solving-your-business-problems-with-ai">UGA SBDC at Valdosta State &#183; &quot;Solving Your Business Problems with AI&quot;</a></td>
+      <td class="c-region">South Georgia</td>
+      <td><span class="chip cat">SBDC / University</span></td>
+      <td>Events-only</td>
+      <td><span class="chip price free">Free</span></td>
+      <td class="c-cad">Recurring/repeated sessions run in different South Georgia towns (e.g. two sessions on back-to-back days in July 2026)</td>
+    </tr>
+<tr data-cat="sbdc" data-fmt="cohort" data-price="free"
+        data-name="wisconsin sbdc + southwestern wisconsin rpc &#183; &quot;ai for small business&quot;" data-region="southwest wisconsin &#183; 5 rural counties: grant, green, iowa, lafayette, richland (the &quot;driftless&quot; region)">
+      <td class="c-name"><a href="#p-wisconsin-sbdc-southwestern-wisconsin-rpc-ai-for-small-business">Wisconsin SBDC + Southwestern Wisconsin RPC &#183; &quot;AI for Small Business&quot;</a></td>
+      <td class="c-region">Southwest Wisconsin</td>
+      <td><span class="chip cat">SBDC / University</span></td>
+      <td>Cohort</td>
+      <td><span class="chip price free">Free</span></td>
+      <td class="c-cad">Series-based: six-plus sessions across five counties running roughly July 13 through mid/late August 2026, with a 201 series following</td>
+    </tr></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="band alt" id="themes">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Cross-cutting lenses</div>
+      <h2>What the field is telling us</h2>
+      <p class="lede">Patterns that hold across the 19 profiles, read through three lenses. Curriculum gets the most room because it's where the field separates.</p>
+    </div>
+    <div class="themes">
+
+    <section class="theme theme-big" id="theme-curriculum">
+      <div class="theme-kick">The priority lens</div>
+      <h3>Curriculum &amp; pedagogy</h3>
+      <p class="theme-summary">The programs that actually move non-technical owners share one pedagogical DNA: curriculum organized by business function, hands-on sessions grounded in the owner's own business and data, and a deployed artifact at the end. The biggest single design decision in the data is the shape of the entry level.</p>
+      <div class="theme-sub"><span class="subfld-l">Patterns across the field</span><ul class="tick"><li>Function-organized: marketing, customer service, operations, finance, prefaced by AI basics and data safety (B(AI)sics, Bronx, SBDC AI-U, Florida SBDC).</li><li>Ship in the room, on the owner's own data, with no deferred homework (Brazoria, Florida SBDC).</li><li>Zero-background promises stated plainly: "if you can use Gmail and a spreadsheet" (Brazoria).</li><li>A day-one business-context exercise grounds every later prompt (Anthropic); Welcome to Chinatown maps the workflow before anyone opens a laptop.</li><li>Tracks end with artifacts and a credential: a workflow template, a written AI-use policy, a certificate (Anthropic, B(AI)sics).</li><li>Short, predictable time commitments: 1 hr/week for 6 weeks (Manhattan), 4 x 2 hrs (Florida SBDC), 4 Saturdays (Brazoria).</li></ul></div>
+      <div class="theme-sub"><span class="subfld-l">Strongest examples</span><ul class="tick"><li><b>Brazoria Tech Lab</b> &#183; A 4-weekend arc (triage tools, plan workflows, build an assistant, deploy lead gen) where every Saturday ends with a working automation in the owner's real business.</li><li><b>AI Fluency (Anthropic)</b> &#183; A named framework (4D), a day-one business-context doc, and learners leave with a workflow template and a written AI-use policy.</li><li><b>Bronx AI Advantage</b> &#183; Five function buckets across four weeks, with tracked outcomes: 5-10 hrs/week saved, ~$500/week in cost savings.</li></ul></div>
+      <div class="theme-sub"><span class="subfld-l">What stalls in the data</span><ul class="tick warn"><li>Lecture-plus-framework entry levels: UGA's workshop is explicitly not hands-on building; owners leave with a mental model and homework.</li><li>Events with no curriculum at all: FLAIA, Charlotte, Memphis, Tampa, and Main Street have hooks and formats but no leveled path and no artifact.</li><li>Re-attendance mistaken for progression: at Memphis, depth accrues through coming back weekly; there are no defined levels.</li></ul></div>
+    </section>
+
+    <section class="theme " id="theme-events">
+      <div class="theme-kick">Lens 02</div>
+      <h3>Events &amp; community ops</h3>
+      <p class="theme-summary">Two operating models cluster: low-friction recurring touchpoints (coffee chats, biergarten Q&amp;As) that meet owners where they are emotionally, and finite high-commitment cohorts that change how a business runs. The strongest operators run the cohort, and several pay owners on completion rather than charging them.</p>
+      <div class="theme-sub"><span class="subfld-l">Patterns across the field</span><ul class="tick"><li>Third-place entries: 30-minute coffee chats (Memphis), a biergarten Q&amp;A (FLAIA), food-and-drinks storytelling nights with ~50 attendees (Welcome to Chinatown).</li><li>Finite cohorts of 15-40 seats, 4 to 6 weeks, weekly sessions (Bronx, Manhattan, Brazoria).</li><li>Completion-conditioned money: Manhattan's $5,000 for implementing, Bronx's $350K grant pool, Southern Georgia's $2,500 Master Grant.</li><li>Oversubscription: Bronx drew 200+ applicants for 70 seats.</li><li>Accessibility mechanics: Spanish-language sessions (Wisconsin; Southern Georgia's Project Puente), after-hours and weekend slots (Alabama), rotating neighborhood venues (Memphis).</li></ul></div>
+      <div class="theme-sub"><span class="subfld-l">Strongest examples</span><ul class="tick"><li><b>Bronx AI Advantage</b> &#183; The strongest end-to-end operator: a tight 4-week cohort taught by local founder-practitioners, hard tracked outcomes, and $350K in completion grants.</li><li><b>Manhattan Tech to Table</b> &#183; One vertical, one hour a week for six weeks, and a $5,000 grant conditioned on implementation, not attendance.</li><li><b>Welcome to Chinatown</b> &#183; Owner-to-owner demos over food and drinks work as teaching and recruiting at once.</li></ul></div>
+      <div class="theme-sub"><span class="subfld-l">What stalls in the data</span><ul class="tick warn"><li>A strong hook with no ladder: FLAIA (~81 members, 1-3 per event), Applied AI Tampa (one event, 28 members), Main Street (drop-in only).</li><li>Solo-organizer dependency: Tampa's group went quiet after a single event with a single organizer.</li><li>A paywall before trust: Tampa and Charlotte charged for beginner content before building an audience.</li></ul></div>
+    </section>
+
+    <section class="theme " id="theme-entity">
+      <div class="theme-kick">Lens 03</div>
+      <h3>Entity &amp; funding models</h3>
+      <p class="theme-summary">Five organizational forms show up, on a clear durability spectrum. Institutional networks with distribution rails and multiple funders are the most robust; solo-organizer meetups are the most fragile. Nearly every high-reach program rides a single large corporate grant.</p>
+      <div class="theme-sub"><span class="subfld-l">Patterns across the field</span><ul class="tick"><li>Institutional networks: America's SBDC AI-U ($10M Google.org on top of permanent SBA, university, and state funding; 63 networks, ~1,000 centers) and the U.S. Chamber's B(AI)sics ($5M Google.org through 1,500+ chambers).</li><li>Chamber foundations running grant-funded cohorts: Bronx and Manhattan, both on Google.org money.</li><li>Diversified local coalitions: Southern Georgia Black Chambers stacks HUD dollars, a Georgia Power sponsorship, VSU, UGA SBDC, and a Latino association.</li><li>For-profit funnels: Memphis's meetup feeds the WeAddBots consultancy, Julia Fu's masterclasses feed a paid institute, Brazoria charges tuition with sponsor seat bundles.</li><li>Solo-organizer groups with no entity and no funding: FLAIA, Tampa, Charlotte.</li></ul></div>
+      <div class="theme-sub"><span class="subfld-l">Strongest examples</span><ul class="tick"><li><b>America's SBDC AI-U</b> &#183; The host network is permanently co-funded by the SBA, universities, and states, so the $10M grant is accelerant rather than lifeblood; student clinics form a renewable contributor pipeline.</li><li><b>Southern Georgia Black Chambers</b> &#183; Five-plus funders and partners; no single one can sink it.</li><li><b>Wisconsin SBDC + SWWRPC</b> &#183; A $68K USDA grant covered a five-county free series, reported in econ-dev metric language: 9 jobs created, 9 saved.</li></ul></div>
+      <div class="theme-sub"><span class="subfld-l">What stalls in the data</span><ul class="tick warn"><li>Single-funder dependency across the high-reach set: most of the biggest programs ride one Google.org grant.</li><li>Single-organizer dependency: FLAIA at 1-3 attendees, Tampa after one event.</li><li>Vendor capture: where a consultancy funds the room, trust holds only when selling is walled out (Memphis's no-pitch rule).</li></ul></div>
+    </section>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="brandmark">AI <span class="for">for</span> LA <span class="muted" style="font-weight:600">&#183; aiforla.org</span></div>
+    <p>60 initiatives scanned, 19 profiled from their own websites and public coverage; every profile carries its sources and a confidence rating.</p>
+    <p>Built by Louisiana owners, for Louisiana owners</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var root=document.documentElement, btn=document.getElementById('themeBtn');
+  function sysDark(){return window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches}
+  function cur(){return root.getAttribute('data-theme')|| (sysDark()?'dark':'light')}
+  btn.addEventListener('click',function(){
+    var n=cur()==='dark'?'light':'dark';
+    root.setAttribute('data-theme',n);
+    try{localStorage.setItem('aiforla-theme',n)}catch(e){}
+  });
+
+  // filtering
+  var q=document.getElementById('q'), fCat=document.getElementById('fCat'),
+      fFmt=document.getElementById('fFmt'), fPrice=document.getElementById('fPrice'),
+      cards=[].slice.call(document.querySelectorAll('#cards .card')),
+      rows=[].slice.call(document.querySelectorAll('#tbody tr')),
+      count=document.getElementById('count');
+  function match(el){
+    var t=(q.value||'').toLowerCase().trim();
+    if(t && (el.dataset.name.indexOf(t)<0 && el.dataset.region.indexOf(t)<0)) return false;
+    if(fCat.value && el.dataset.cat!==fCat.value) return false;
+    if(fFmt.value && el.dataset.fmt!==fFmt.value) return false;
+    if(fPrice.value && el.dataset.price!==fPrice.value) return false;
+    return true;
+  }
+  function apply(){
+    var n=0;
+    cards.forEach(function(c){var m=match(c);c.classList.toggle('hidden',!m);});
+    rows.forEach(function(r){r.classList.toggle('hidden',!match(r));});
+    cards.forEach(function(c){if(match(c))n++;});
+    count.textContent=n+' / '+cards.length+' shown';
+  }
+  [q,fCat,fFmt,fPrice].forEach(function(e){e.addEventListener('input',apply);});
+  apply();
+
+  // view toggle
+  var vC=document.getElementById('vCards'), vT=document.getElementById('vTable'),
+      cw=document.getElementById('cards'), tw=document.getElementById('tablewrap');
+  vC.addEventListener('click',function(){vC.classList.add('on');vT.classList.remove('on');cw.classList.remove('hidden');tw.classList.add('hidden');});
+  vT.addEventListener('click',function(){vT.classList.add('on');vC.classList.remove('on');tw.classList.remove('hidden');cw.classList.add('hidden');});
+
+  // table link opens the card
+  document.querySelectorAll('#tbody .c-name a').forEach(function(a){
+    a.addEventListener('click',function(){
+      var id=a.getAttribute('href').slice(1); var d=document.getElementById(id);
+      if(d){vC.click(); d.open=true;}
+    });
+  });
+})();
+</script>
+
+</body>
+</html>

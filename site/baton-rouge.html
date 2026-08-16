@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Baton Rouge &#183; AI for LA</title>
+<link rel="stylesheet" href="style.css">
+<script>try{var t=localStorage.getItem('aiforla-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <span class="brandmark"><a href="index.html">AI <span class="for">for</span> LA</a></span>
+    <nav class="topnav">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="index.html#cities">Find your city</a>
+    </nav>
+    <button class="tgl" id="themeBtn" aria-label="Toggle color theme">&#9680; theme</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow">AI for LA &#183; Chapter 01</div>
+    <h1>Baton Rouge</h1>
+    <p class="sub">The first chapter. Free meetups for owners and operators &mdash; bring what you're working on, leave with something you can use.</p>
+  </div>
+</section>
+
+<section class="band alt">
+  <div class="wrap">
+    <div class="month-label">September</div>
+    <div class="events">
+      <div class="event">
+        <div><div class="edate">Thu Sep 17</div><div class="emeta">12:00&ndash;2:00 PM</div></div>
+        <div><span class="chip type-learn">Learn</span><div class="emeta">Venue TBD &#183; Baton Rouge</div></div>
+        <a class="btn" href="#">Save a seat</a>
+      </div>
+    </div>
+    <div class="month-label">October</div>
+    <div class="events">
+      <div class="event">
+        <div><div class="edate">Thu Oct 1</div><div class="emeta">6:00&ndash;8:00 PM</div></div>
+        <div><span class="chip type-mingle">Mingle</span><div class="emeta">Venue TBD &#183; Baton Rouge</div></div>
+        <a class="btn" href="#">Sign up</a>
+      </div>
+      <div class="event">
+        <div><div class="edate">Thu Oct 15</div><div class="emeta">12:00&ndash;2:00 PM</div></div>
+        <div><span class="chip type-learn">Learn</span><div class="emeta">Venue TBD &#183; Baton Rouge</div></div>
+        <a class="btn" href="#">Save a seat</a>
+      </div>
+      <div class="event">
+        <div><div class="edate">Thu Oct 29</div><div class="emeta">6:00&ndash;8:00 PM</div></div>
+        <div><span class="chip type-mingle">Mingle</span><div class="emeta">Venue TBD &#183; Baton Rouge</div></div>
+        <a class="btn" href="#">Sign up</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="eyebrow">Other cities</div>
+    <div class="citynav">
+      <a href="nola.html">NOLA</a>
+      <a href="lafayette.html">Lafayette</a>
+      <a href="lake-charles.html">Lake Charles</a>
+      <a href="alexandria.html">Alexandria</a>
+      <a href="monroe.html">Monroe</a>
+      <a href="shreveport.html">Shreveport</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="brandmark">AI <span class="for">for</span> LA <span class="muted" style="font-weight:600">&#183; aiforla.org</span></div>
+    <p>Built by Louisiana owners, for Louisiana owners</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var root=document.documentElement,btn=document.getElementById('themeBtn');
+  function sysDark(){return window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches}
+  function cur(){return root.getAttribute('data-theme')||(sysDark()?'dark':'light')}
+  btn.addEventListener('click',function(){
+    var n=cur()==='dark'?'light':'dark';
+    root.setAttribute('data-theme',n);
+    try{localStorage.setItem('aiforla-theme',n)}catch(e){}
+  });
+})();
+</script>
+</body>
+</html>

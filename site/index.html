@@ -1,28 +1,87 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AI for LA</title>
-  <style>
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: grid;
-      place-items: center;
-      font-family: Georgia, 'Times New Roman', serif;
-      background: #faf8f4;
-      color: #2b2b2b;
-    }
-    main { max-width: 34rem; padding: 2rem; text-align: center; }
-    h1 { font-size: 1.6rem; font-weight: normal; line-height: 1.4; }
-    p { color: #6b6b6b; line-height: 1.6; }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI for LA</title>
+<meta name="description" content="An open-source AI community for Louisiana small business owners.">
+<link rel="stylesheet" href="style.css">
+<script>try{var t=localStorage.getItem('aiforla-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
 </head>
 <body>
-  <main>
-    <h1>AI for LA</h1>
-    <p>An open-source AI community for Louisiana small business owners.</p>
-  </main>
+
+<header class="topbar">
+  <div class="wrap">
+    <span class="brandmark"><a href="index.html">AI <span class="for">for</span> LA</a></span>
+    <nav class="topnav">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="research.html">Research</a>
+      <a href="#cities">Find your city</a>
+    </nav>
+    <button class="tgl" id="themeBtn" aria-label="Toggle color theme">&#9680; theme</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="heroline">
+      <div class="herologo"><img src="logo.png" alt="AI for LA &mdash; Louisiana state mark" width="512" height="508"></div>
+      <div>
+        <h1>AI <span class="for">for</span> LA</h1>
+        <p class="sub">An <span class="accentword">open-source</span> AI community for Louisiana small business owners.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band alt">
+  <div class="wrap">
+    <div class="strow">
+      <p class="lead"><span class="accentword">Louisiana small businesses are the economic engine</span> that drives change, upward mobility,</p>
+      <p class="support">and an improvement in the quality of life that we offer our families and enjoy with our friends.</p>
+    </div>
+    <div class="strow">
+      <p class="lead"><span class="accentword">AI for LA is a free community</span></p>
+      <p class="support">We're focused on helping Louisiana small business owners take their first steps with AI, while offering a platform to share what they're building with other like-minded Louisiana owners and operators.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="cities">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Events</h2>
+    </div>
+    <div class="cityrows">
+      <a class="cityrow" href="baton-rouge.html"><span class="cname">Baton Rouge</span><span class="cmeta live">First chapter &#183; fall series forming</span></a>
+      <a class="cityrow" href="nola.html"><span class="cname">NOLA</span><span class="cmeta">NOLA Chapter coming soon</span></a>
+      <a class="cityrow" href="lafayette.html"><span class="cname">Lafayette</span><span class="cmeta">Lafayette Chapter coming soon</span></a>
+      <a class="cityrow" href="lake-charles.html"><span class="cname">Lake Charles</span><span class="cmeta">Lake Charles Chapter coming soon</span></a>
+      <a class="cityrow" href="alexandria.html"><span class="cname">Alexandria</span><span class="cmeta">Alexandria Chapter coming soon</span></a>
+      <a class="cityrow" href="monroe.html"><span class="cname">Monroe</span><span class="cmeta">Monroe Chapter coming soon</span></a>
+      <a class="cityrow" href="shreveport.html"><span class="cname">Shreveport</span><span class="cmeta">Shreveport Chapter coming soon</span></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="brandmark">AI <span class="for">for</span> LA <span class="muted" style="font-weight:600">&#183; aiforla.org</span></div>
+    <p>Built by Louisiana owners, for Louisiana owners</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var root=document.documentElement,btn=document.getElementById('themeBtn');
+  function sysDark(){return window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches}
+  function cur(){return root.getAttribute('data-theme')||(sysDark()?'dark':'light')}
+  btn.addEventListener('click',function(){
+    var n=cur()==='dark'?'light':'dark';
+    root.setAttribute('data-theme',n);
+    try{localStorage.setItem('aiforla-theme',n)}catch(e){}
+  });
+})();
+</script>
 </body>
 </html>
