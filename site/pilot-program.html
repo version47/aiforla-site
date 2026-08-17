@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pilot Project Brief &#183; AI for LA</title>
+<meta name="description" content="Baton Rouge market 60 day pilot.">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="favicon-180.png">
+<link rel="stylesheet" href="style.css">
+<script>try{var t=localStorage.getItem('aiforla-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<style>
+/* ---- brief page components (Field Study system) ---- */
+.metaline.stack{margin-top:14px}
+.pull{font-family:'Fraunces',Georgia,serif;font-style:italic;font-weight:500;
+  font-size:clamp(18px,2.3vw,25px);line-height:1.44;color:var(--ink);max-width:52ch;
+  border-left:3px solid var(--chartreuse);padding-left:24px;margin:26px 0}
+.pull p+p{margin-top:16px}
+.para{font-size:16.5px;color:var(--ink-soft);line-height:1.62;max-width:72ch;margin-top:16px}
+.para:first-child{margin-top:0}
+.para b{color:var(--ink);font-weight:600}
+.para i{font-style:italic}
+.olist{list-style:none;padding:0;margin:20px 0 0;display:flex;flex-direction:column;gap:12px;max-width:72ch}
+.olist li{display:grid;grid-template-columns:auto 1fr;gap:16px;font-size:15.5px;color:var(--ink-soft);line-height:1.55}
+.olist .n{font-family:'JBMono',ui-monospace,monospace;font-size:12px;color:var(--river);padding-top:4px}
+
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+@media (max-width:900px){.trio{grid-template-columns:1fr}}
+.princ{border:1px solid var(--line);border-top:3px solid var(--forest);border-radius:var(--radius);
+  padding:24px;background:var(--card)}
+.princ:nth-child(2){border-top-color:var(--river)}
+.princ:nth-child(3){border-top-color:var(--clay)}
+.princ h3{font-size:18px;margin-bottom:12px}
+.princ p{font-size:14.5px;color:var(--ink-soft);line-height:1.55}
+.princ b{color:var(--ink);font-weight:600}
+
+.fkd{border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;background:var(--card)}
+.fkd-l{font-family:'JBMono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--river);display:block;margin-bottom:9px}
+.fkd p{font-size:15px;color:var(--ink);line-height:1.5}
+.para-lg{font-size:clamp(23px,3.2vw,34px);font-weight:800;letter-spacing:-.02em;line-height:1.34;
+  text-wrap:balance;color:var(--ink);max-width:34ch}
+.tonestack{margin-top:20px}
+.tonestack p:nth-child(odd){text-align:left}
+.tonestack p:nth-child(even){text-align:right}
+.tone-lead{font-size:clamp(21px,2.6vw,28px);font-weight:800;letter-spacing:-.02em;
+  line-height:1.25;color:var(--ink);margin:0}
+.tone-no{font-size:clamp(18px,2.1vw,23px);font-weight:800;letter-spacing:-.02em;
+  line-height:1.3;color:var(--ink-faint);margin:7px 0 0}
+.tone-no:first-of-type{margin-top:15px}
+.tonestack+.para{margin-top:22px}
+.offerbox{border:1px solid var(--line);border-left:3px solid var(--chartreuse);border-radius:var(--radius);
+  background:var(--card);padding:24px 26px;margin:22px 0 0;max-width:70ch}
+.offerbox p{font-size:17px;color:var(--ink);line-height:1.6}
+.offerbox p+p{margin-top:14px}
+.stages{display:flex;flex-direction:column;gap:16px;margin-top:24px}
+.stage{border:1px solid var(--line);border-top:3px solid var(--forest);border-radius:var(--radius);
+  padding:26px 28px;background:var(--card)}
+.stage:nth-child(2){border-top-color:var(--river)}
+.stage:nth-child(3){border-top-color:var(--sage)}
+.stage h3{font-size:21px}
+.stage .stage-p{font-size:15px;color:var(--ink-soft);line-height:1.6;max-width:74ch;margin-top:14px}
+.levels{display:flex;flex-direction:column;gap:9px;margin-top:18px}
+.level{background:var(--surface);border-radius:var(--radius-sm);padding:14px 16px;
+  display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:baseline}
+.level .lv{font-family:'JBMono',ui-monospace,monospace;font-size:11px;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--river);white-space:nowrap}
+.level p{font-size:14.5px;color:var(--ink);line-height:1.5}
+.level i{font-style:italic;font-weight:600}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <span class="brandmark"><a href="index.html">AI <span class="for">for</span> LA</a></span>
+    <nav class="topnav">
+      <a href="index.html">Home</a>
+      <a href="pilot-program.html" aria-current="page">Pilot Program</a>
+      <a href="research.html">Research</a>
+      <a href="index.html#cities" class="nav-cities">Find your city</a>
+    </nav>
+    <button class="tgl" id="themeBtn" aria-label="Toggle color theme">&#9680; theme</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="kicker">A Statewide AI Community for Louisiana</div>
+    <h1><span class="accentword">Pilot</span> Project Brief</h1>
+    <p class="sub">We have selected the Baton Rouge market for a 60 day pilot of our learning model.</p>
+    <div class="metaline">
+      <span>Prepared By: <b>Wes Kennison, Alex Hardee</b></span>
+      <span>Date: <b>June 17, 2026</b></span>
+    </div>
+    <div class="metaline stack">
+      <span>Project Title: <b>A statewide AI community for Louisiana businesses &mdash; launching in Baton Rouge</b></span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 1. MARKET FOUNDATION ============ -->
+<section class="band alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">01</div>
+      <h2>Market Foundation</h2>
+    </div>
+
+    <div class="sub-head"><h3>Initiative Context</h3></div>
+    <p class="para">Baton Rouge is about as AI-curious as any city in the country right now. When Anthropic ran its road show, the strongest registration response on the whole tour reportedly came from right here. And Baton Rouge certainly isn&rsquo;t alone. For the first time, perhaps ever, small, scrappy business owners the world over are dealing with the same nagging question;</p>
+    <div class="pull">
+      <p>&ldquo;I know AI represents opportunity, but what does that opportunity mean to MY business, <span class="accentword">and where do I start?&rdquo;</span></p>
+    </div>
+    <p class="para"><b>As the world moves from being a business community in it&rsquo;s infancy with AI to being AI integrated,</b> shepherding that transition by <span class="accentword">teaching, sharing, and guiding</span> is what this initiative represents.</p>
+
+    <div class="sub-head"><h3>Audience / Market Snapshot</h3></div>
+    <p class="para">Small and mid-sized business owners and operators are the micro-engines of the economy, changes to their quality of life directly impact local economies at the grassroots level.</p>
+    <p class="para">The AI-narrative for SMB is nothing like what&rsquo;s playing out in big enterprise.</p>
+    <p class="para">The headlines for AI integration at the enterprise level are all about cutting headcount to hack growth on the balance sheet, but a small business team typically can&rsquo;t afford to lose ANY of it&rsquo;s team members who are actively engaged in the work they do, day in and day out.</p>
+    <p class="para">We believe that the AI Opportunity for Small to Medium size businesses is two fold:</p>
+    <ol class="olist">
+      <li><span class="n">1</span><span>Efficiency creation by streamlining and automating operations</span></li>
+      <li><span class="n">2</span><span>Leveraging this newly liberated internal expertise to apply it to new market challenges, so as to better compete with bigger, less nimble teams.</span></li>
+    </ol>
+
+    <div class="sub-head"><h3>Brand Positioning</h3></div>
+    <div class="pull">
+      <p>A rising tide raises all ships.</p>
+    </div>
+    <p class="para">This is a community that runs on the open-source spirit. When Louisiana businesses win, we all win. The offer to business owners is simple,</p>
+    <div class="offerbox">
+      <p>&ldquo;integrating AI into your business operations frees up more time, more capacity, and more room for the human parts of the work.</p>
+      <p>Our events and the learning track presented on the website are a jumping off point for you to begin your journey into building an Operating System for your business that optimizes how the work gets done.&rdquo;</p>
+    </div>
+
+    <div class="sub-head"><h3>Organizing Principles</h3></div>
+    <div class="trio">
+      <div class="princ">
+        <h3>Context is the whole game.</h3>
+        <p>AI with bad context is worse than a bad employee. With rich, specific context, it&rsquo;s a different tool entirely. So adoption has to happen inside each person&rsquo;s real work, this is the essence of <b>practitioner led change.</b></p>
+      </div>
+      <div class="princ">
+        <h3>The hump is smaller than it looks, and most of it is in your head.</h3>
+        <p>The first and most difficult barrier to entry is taking the first step. Getting a business from 0 to 1 means facilitating a transition from chatting with AI in a browser to <b>throwing your day-to-day work at AI in an integrated and secure way.</b></p>
+      </div>
+      <div class="princ">
+        <h3>There&rsquo;s no silver bullet.</h3>
+        <p><b>You don&rsquo;t &ldquo;install AI&rdquo; and wake up optimized.</b> Working with AI is a series of cycles, full of dips and nooks and operational uncertainty. Every time you run a piece of real work through AI inside good guardrails, that curve gets a little smoother. Do it enough and the day gets more dependable, because everything you touch is captured in one place you can talk to. When you commit to the work it takes to get AI integrated, each success builds on the one before it and compounds the longer you work it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2. NARRATIVE OBJECTIVES ============ -->
+<section class="band">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">02</div>
+      <h2>Objectives</h2>
+    </div>
+
+    <p class="para para-lg">Build a community that moves Louisiana businesses and individuals from AI-curious to AI-operating, <span class="accentword">starting in Baton Rouge.</span></p>
+
+    <div class="sub-head"><h3>Primary Audience</h3></div>
+    <p class="para">Small and mid-sized business owners and operators who want to integrate but don&rsquo;t know where to start.</p>
+    <p class="para">Secondary: individual practitioners, nonprofits, and eventually the bigger organizations and civic partners who help it travel across the state.</p>
+
+    <div class="sub-head"><h3>Audience Takeaways</h3></div>
+    <div class="trio">
+      <div class="fkd">
+        <span class="fkd-l">Feel</span>
+        <p>&ldquo;I&rsquo;m not behind. This is more accessible than I thought, and these are my people.&rdquo;</p>
+      </div>
+      <div class="fkd">
+        <span class="fkd-l">Know</span>
+        <p>AI can work like an operating system for my business, acting as a glue to bring many pieces and parts together</p>
+      </div>
+      <div class="fkd">
+        <span class="fkd-l">Do</span>
+        <p>Take the free first step, show up and engage, try something real in your own business, then come back and share it.</p>
+      </div>
+    </div>
+
+    <div class="sub-head"><h3>Underlying Themes (keywords)</h3></div>
+    <ul class="tags big-tags">
+      <li>Rising tide</li>
+      <li>practitioner-led</li>
+      <li>operating system</li>
+      <li>more time</li>
+      <li>open source</li>
+      <li>big tent</li>
+      <li>Louisiana leads.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ 3. CREATIVE STRATEGY ============ -->
+<section class="band alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">03</div>
+      <h2>Strategy</h2>
+    </div>
+
+    <p class="para">The core idea for building sustainable economic lift comes in the form of <span class="accentword">&ldquo;Practitioner-Led Change&rdquo;</span>.</p>
+    <div class="pull">
+      <p>The working practitioner, in any industry vertical, is the best source of the accurate context that their vertical needs to be effective in adopting AI based change.</p>
+    </div>
+    <p class="para">This expertise allows for anyone working in that industry to see themselves in the solutions being put together, and incentivizes others to adapt similar measures.</p>
+    <p class="para">As more and more successes happen across verticals, the network effect of a more optimized business landscape can begin to emerge, making for a more vibrant and thriving business community.</p>
+
+    <div class="sub-head"><h3>Tone / Voice</h3></div>
+    <div class="tonestack">
+      <p class="tone-lead">We are authentic, unvarnished, peer-to-peer.</p>
+      <p class="tone-no">No hype.</p>
+      <p class="tone-no">No shortcut-to-revenue energy.</p>
+      <p class="tone-no">No cutting-headcount language.</p>
+    </div>
+    <p class="para">This community represents an avenue and a proving ground for creating new opportunity and working through what implementation really looks like in real world terms.</p>
+
+    <div class="sub-head"><h3>Getting Started</h3></div>
+    <p class="para">Most small business owners are scrappy and entrepreneurial, they don&rsquo;t need to be motivated, they just need to be pointed in the right direction and things can begin to shift. This makes real the claim that the free resources provided can be enough to put an operator on a track to revolutionize their business, in short order.</p>
+
+    <div class="stages">
+      <article class="stage">
+        <h3>Stage 1 &#183; Learn (free, online)</h3>
+        <p class="stage-p">An online learn page that features 3 levels of learning content</p>
+        <div class="levels">
+          <div class="level"><span class="lv">Level 1</span><p>What is Claude?</p></div>
+          <div class="level"><span class="lv">Level 2</span><p>I&rsquo;m tired of copying and pasting results out of an LLM and I&rsquo;m ready to learn about AI <i>Integration.</i></p></div>
+          <div class="level"><span class="lv">Level 3</span><p>I&rsquo;m interested in building skills, MCPs, and generally optimizing what I&rsquo;ve got working.</p></div>
+        </div>
+        <p class="stage-p">The content will be largely curated and featured in 3 playlists, which are updated every week as new things emerge in the technology landscape.</p>
+      </article>
+
+      <article class="stage">
+        <h3>Stage 2 &#183; Events (free, in person)</h3>
+        <p class="stage-p">Recurring, topical, attendee-led gatherings, the vision is for anyone who owns a business can come. You just get more out of it once you&rsquo;ve done the levels, because your business has its own things to learn first. The on-ramp is a sign at an intersection: &ldquo;Business owner?&rdquo; and a QR code straight to the Learn page. Formats survey the room, pull in challenges people sent ahead of time so the content stays current, and give everyone a place to ask questions and find resources.</p>
+      </article>
+
+      <article class="stage">
+        <h3>Stage 3 &#183; Community</h3>
+        <p class="stage-p">Conversations are where we learn from each other, owners who&rsquo;ve gotten to &ldquo;I can do this&rdquo; start talking to each other, comparing what they tried, what broke, what worked. That discourse is the whole point. It sustains itself and it grows: people who&rsquo;ve made the jump bring in the next curious person, and the room gets bigger on its own.</p>
+      </article>
+    </div>
+
+    <div class="sub-head"><h3>Event Formats</h3></div>
+    <p class="para">Two to three formats on a rotation, plus webinars:</p>
+    <ul class="tick">
+      <li><span class="accentword">Learn</span> &mdash; AI theory and applied; get people to the goal line.</li>
+      <li><span class="accentword">Mingle</span> &mdash; a happy hour with a short peer-testimonial slot: &ldquo;here&rsquo;s what I did in my business.&rdquo;</li>
+      <li><span class="accentword">Roundtable</span> &mdash; a light panel of operators comparing what they&rsquo;re trying.</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="brandmark">AI <span class="for">for</span> LA <span class="muted" style="font-weight:600">&#183; aiforla.org</span></div>
+    <p>Built by Louisiana owners, for Louisiana owners</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var root=document.documentElement,btn=document.getElementById('themeBtn');
+  function sysDark(){return window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches}
+  function cur(){return root.getAttribute('data-theme')||(sysDark()?'dark':'light')}
+  btn.addEventListener('click',function(){
+    var n=cur()==='dark'?'light':'dark';
+    root.setAttribute('data-theme',n);
+    try{localStorage.setItem('aiforla-theme',n)}catch(e){}
+  });
+})();
+</script>
+</body>
+</html>
