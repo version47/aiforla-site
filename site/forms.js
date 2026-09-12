@@ -1,21 +1,19 @@
 /* ============================================================
    Form handling for aiforla.org
 
-   ONE THING TO CONFIGURE. Paste your form endpoint below and
-   every form on the site starts posting to it.
+   BY DESIGN: there is no third-party form service and no
+   cost. Submitting opens the visitor's mail client with a
+   pre-filled message to wes@aiforla.org containing every
+   answer. Applications arrive as ordinary email.
 
-   Works with anything that accepts a POST of form fields —
-   Formspree, Basin, Getform, Netlify Forms, a Google Apps
-   Script web app, your own endpoint.
-
-   Until you set it, forms fall back to opening a pre-filled
-   email to hello@aiforla.org with every answer in the body.
-   Nothing is ever silently lost.
+   FORM_ENDPOINT is left empty deliberately. If we ever want
+   direct POST capture, paste an endpoint below and every form
+   switches over; the mailto stays as the failure path.
    ============================================================ */
 
 var FORM_ENDPOINT = ''; // <-- paste your endpoint URL here
 
-var FALLBACK_EMAIL = 'hello@aiforla.org';
+var FALLBACK_EMAIL = 'wes@aiforla.org';
 
 (function () {
   'use strict';
