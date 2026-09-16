@@ -4,6 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Lafayette &#183; AI for LA</title>
+<meta name="description" content="AI for LA is coming to Lafayette. Add your email and we'll tell you when the chapter opens.">
+<link rel="canonical" href="https://aiforla.org/lafayette.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AI for LA">
+<meta property="og:url" content="https://aiforla.org/lafayette.html">
+<meta property="og:title" content="Lafayette · AI for LA">
+<meta property="og:description" content="AI for LA is coming to Lafayette. Tell us you're interested and we'll let you know when it opens.">
+<meta property="og:image" content="https://aiforla.org/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="apple-touch-icon" href="favicon-180.png">
 <link rel="stylesheet" href="style.css">
@@ -31,6 +42,24 @@
   </div>
 </section>
 
+<section class="band alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Lafayette is not scheduled yet</h2>
+      <p class="lede">The pilot runs in Baton Rouge this fall. Other Louisiana cities follow in the new year.</p>
+    </div>
+    <form class="signup" data-aiforla
+          data-subject="Lafayette &#183; interested"
+          data-thanks="Received. We will email when Lafayette is scheduled.">
+      <input type="hidden" name="City" value="Lafayette">
+      <label class="hidden" for="email-lafayette">Email</label>
+      <input id="email-lafayette" name="Email" type="email" autocomplete="email" placeholder="you@yourbusiness.com" required>
+      <button class="btn" type="submit">Email me when it opens</button>
+      <p class="form-status" hidden></p>
+    </form>
+  </div>
+</section>
+
 <section class="band">
   <div class="wrap">
     <div class="eyebrow">Other cities</div>
@@ -52,6 +81,7 @@
   </div>
 </footer>
 
+<script src="forms.js"></script>
 <script>
 (function(){
   var root=document.documentElement,btn=document.getElementById('themeBtn');

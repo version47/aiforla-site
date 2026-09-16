@@ -428,3 +428,37 @@ a.cityrow-w:hover .cw-bar{transform:translateX(5px)}
 @media (prefers-reduced-motion:reduce){.cw-bar{transition:none}a.cityrow-w:hover .cw-bar{transform:none}}
 @media (max-width:640px){a.cityrow-w{grid-template-columns:1fr;gap:8px}
   .cw-bar{justify-self:start}}
+
+/* ---- forms ---- */
+.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px 22px;max-width:760px;margin-top:26px}
+.formgrid .full{grid-column:1/-1}
+@media (max-width:680px){.formgrid{grid-template-columns:1fr}}
+.field{display:flex;flex-direction:column;gap:7px}
+.field label{font-family:'JBMono',ui-monospace,monospace;font-size:10.5px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-faint)}
+.field .req{color:var(--clay)}
+.field input,.field textarea,.field select{font-family:'Albert',system-ui,sans-serif;font-size:15px;
+  color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:11px 13px;width:100%}
+.field textarea{min-height:104px;resize:vertical;line-height:1.5}
+.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--river);outline:none;
+  box-shadow:0 0 0 3px color-mix(in srgb,var(--river) 18%,transparent)}
+.field .hint{font-size:12.5px;color:var(--ink-faint);line-height:1.45}
+.formactions{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:26px}
+.form-status{font-size:14px;line-height:1.45;max-width:46ch}
+.form-status.is-ok{color:var(--good)}
+.form-status.is-warn{color:var(--warn)}
+.formnote{font-size:13px;color:var(--ink-faint);line-height:1.55;max-width:60ch;margin-top:18px}
+.formnote a{color:var(--river)}
+button.btn{font-family:'JBMono',ui-monospace,monospace}
+button.btn:disabled{opacity:.55;cursor:default}
+
+/* compact single-field signup (city pages) */
+.signup{display:flex;gap:10px;flex-wrap:wrap;max-width:520px;margin-top:20px}
+.signup input[type=email]{flex:1;min-width:220px;font-family:'Albert',system-ui,sans-serif;font-size:15px;
+  color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:var(--radius-sm);padding:11px 13px}
+.signup input[type=email]:focus{border-color:var(--river);outline:none;
+  box-shadow:0 0 0 3px color-mix(in srgb,var(--river) 18%,transparent)}
+.signup .form-status{flex-basis:100%}
+.srcwrap .src-note{font-family:'JBMono',monospace;font-size:11px;background:var(--surface);
+  border:1px dashed var(--line);padding:3px 8px;border-radius:6px;color:var(--ink-faint)}

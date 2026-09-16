@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Apply &#183; Baton Rouge Pilot Cohort &#183; AI for LA</title>
+<meta name="description" content="Apply for the Baton Rouge pilot cohort: 20 to 30 businesses, four sessions, October through December. One application covers all four.">
+<link rel="canonical" href="https://aiforla.org/apply.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AI for LA">
+<meta property="og:url" content="https://aiforla.org/apply.html">
+<meta property="og:title" content="Apply &#183; Baton Rouge Pilot Cohort">
+<meta property="og:description" content="Twenty to thirty Baton Rouge businesses, four sessions, October through December. One application covers all four.">
+<meta property="og:image" content="https://aiforla.org/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="favicon-180.png">
+<link rel="stylesheet" href="style.css">
+<script>try{var t=localStorage.getItem('aiforla-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <span class="brandmark"><a href="index.html">AI <span class="for">for</span> LA</a></span>
+    <nav class="topnav">
+      <a href="index.html">Home</a>
+      <a href="pilot-program.html">Pilot Program</a>
+      <a href="research.html">Research</a>
+      <a href="index.html#cities" class="nav-cities">Find your city</a>
+    </nav>
+    <button class="tgl" id="themeBtn" aria-label="Toggle color theme">&#9680; theme</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Baton Rouge &#183; Pilot cohort</div>
+    <h1>Apply</h1>
+    <p class="sub">20 to 30 Baton Rouge businesses. One application covers all four sessions.</p>
+    <div class="metaline">
+      <span><b>Thu Oct 15</b> Learn &#183; 12&ndash;2</span>
+      <span><b>Thu Oct 29</b> Mingle &#183; 6&ndash;8</span>
+      <span><b>Thu Nov 12</b> Learn &#183; 12&ndash;2</span>
+      <span><b>Thu Dec 3</b> Mingle &#183; 6&ndash;8</span>
+    </div>
+    <p class="sub">Free. Bring a laptop and a Claude or ChatGPT account. Venue sent to those accepted.</p>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <form data-aiforla
+          data-subject="Apply &#183; Baton Rouge pilot"
+          data-thanks="Application received. We will be in touch before the first session.">
+      <div class="formgrid">
+        <div class="field">
+          <label for="name">Name <span class="req">*</span></label>
+          <input id="name" name="Name" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="business">Business <span class="req">*</span></label>
+          <input id="business" name="Business" type="text" autocomplete="organization" required>
+        </div>
+        <div class="field full">
+          <label for="email">Email <span class="req">*</span></label>
+          <input id="email" name="Email" type="email" autocomplete="email" required>
+        </div>
+        <div class="field full">
+          <label for="does">What the business does <span class="req">*</span></label>
+          <textarea id="does" name="What the business does" required></textarea>
+        </div>
+        <div class="field full">
+          <label for="hope">What you want from the sessions <span class="req">*</span></label>
+          <textarea id="hope" name="What they want out of it" required></textarea>
+        </div>
+      </div>
+
+      <div class="formactions">
+        <button class="btn" type="submit">Send application</button>
+        <p class="form-status" hidden></p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="brandmark">AI <span class="for">for</span> LA <span class="muted" style="font-weight:600">&#183; aiforla.org</span></div>
+    <p>Built by Louisiana owners, for Louisiana owners</p>
+  </div>
+</footer>
+
+<script src="forms.js"></script>
+<script>
+(function(){
+  var root=document.documentElement,btn=document.getElementById('themeBtn');
+  function sysDark(){return window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches}
+  function cur(){return root.getAttribute('data-theme')||(sysDark()?'dark':'light')}
+  btn.addEventListener('click',function(){
+    var n=cur()==='dark'?'light':'dark';
+    root.setAttribute('data-theme',n);
+    try{localStorage.setItem('aiforla-theme',n)}catch(e){}
+  });
+})();
+</script>
+</body>
+</html>
