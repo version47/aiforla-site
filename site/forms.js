@@ -70,7 +70,7 @@ var FALLBACK_EMAIL = 'wes@aiforla.org';
       if (!r.ok) throw new Error(r.status);
       form.reset();
       setStatus(form, form.getAttribute('data-thanks') ||
-        'Thank you — we’ll be in touch.', 'ok');
+        'Received. We will be in touch.', 'ok');
     }).catch(function () {
       setStatus(form, 'That didn’t send. Opening an email instead…', 'warn');
       setTimeout(function () { mailtoFallback(form); }, 900);
